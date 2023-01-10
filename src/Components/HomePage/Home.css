@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* MainSection Style */
+.imgCatageory{
+    width: 100px;
+    height: 120px;
+}
+/* Navbar style */
+.footer {
+    margin-top: 30px; 
+    padding: 5px 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon {
+    color: #34785D;
+   font-size: 40px;
+}
+
+.navbar {
+    list-style: none;
+}
