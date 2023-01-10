@@ -3,14 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* MainSection Style */
-.imgCatageory{
-    width: 10px;
-    height: 30px;
+body{
+
 }
-.catagoryEach{
+/* MainSection Style */
+.imgC{
+    width: 40vw;
+    height: 30vw;
+}
+.mainSection{
+    margin: 5vw;
+    padding: 2vw;
+}
+.subHeading{
+    margin-bottom: 15px;
+}
+.catagorySection {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+.catagoryEach{
+    margin-bottom: 5px;
 }
 /* Navbar style */
 .footer {
