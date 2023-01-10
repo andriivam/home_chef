@@ -3,9 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+
+}
 
 /* Search Bar + small logo */
-
+/* header */
 .App-header{
     display: flex;
     align-items: center;
@@ -41,10 +44,9 @@ hr{
 
 /* MainSection Style */
 .imgCatageory{
-    width: 100px;
-    height: 120px;
+    width: 25vw  ;
+    height: 20vw;
 }
-/* MainSection Style */
 
 .mainSection{
     margin-top: 30px;
