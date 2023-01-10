@@ -9,7 +9,7 @@ const Header = () => {
         <header>
         <div className="App-header">
             <div className='smlLogo'>
-                <img className ='smallLogo' src={image} alt="BrandLogo"></img>
+                <img className ='smallLogo' src={image} alt="Brand Logo"></img>
             </div>
             <div action="" className="search-bar">
             <input
