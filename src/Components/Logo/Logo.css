@@ -1,0 +1,29 @@
+body {
+  background-color: #34785d;
+}
+
+.logo {
+  display: block;
+  border: none;
+}
+
+.logoButton {
+  margin: auto;
+  display: flex;
+  border: none;
+  align-content: center;
+}
+
+/* @media only screen and (min-width: 1224px) { 
+   
+    .logoButton{size:300px;
+
+    
+   } } */
+
+@media only screen and (max-width: 600px) {
+  .logoButton {
+    height: 10px;
+    border: red solid 2px;
+  }
+}
