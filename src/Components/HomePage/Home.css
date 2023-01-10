@@ -3,8 +3,46 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
 
+/* Search Bar + small logo */
+
+.App-header{
+    display: flex;
+    align-items: center;
+}
+.search-input{
+  background-color:transparent;
+  border-radius: 50px;
+  outline: none;
+  border: 2px solid #34785D;
+  color: #000000;
+  height: 2rem;
+  width: 15rem;
+}
+.search-btn{
+    border: none;
+    color: #34785D;  
+    background-color:transparent;
+    margin-left: -1.6rem;
+    font-size: 15px;
+}
+.smallLogo{
+    height:8rem;
+}
+hr{
+  background-color: #34785D
+}
+
+@media only screen and (max-width: 600px) {
+    .smallLogo{
+        height:5rem;
+    }
+  }
+
+/* MainSection Style */
+.imgCatageory{
+    width: 100px;
+    height: 120px;
 }
 /* MainSection Style */
 
