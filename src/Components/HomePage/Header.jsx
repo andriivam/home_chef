@@ -1,0 +1,29 @@
+import './Home.css';
+import React, {useRef} from "react"
+import image from "../Logo/logorond.png"
+import { FaSearch } from 'react-icons/fa';
+
+
+const Header = () => {
+    const inputRef = useRef();
+    return( 
+        <header className="App-header">
+            <div className='smlLogo'>
+                <img className ='smallLogo' src={image} alt="Brand Logo"></img>
+            </div>
+            
+			<div form action="" className="search-bar">
+            <input
+                type="text"
+                placeholder="Search here"
+                className="search-input"
+                ref={inputRef} /> 
+                
+                <button className='search-btn' type="submit"><FaSearch /></button>
+                
+            </div>
+            
+        </header>
+    )
+}
+export default Header;
