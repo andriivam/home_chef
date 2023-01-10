@@ -3,8 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
+/* MainSection Style */
+.imgCatageory{
+    width: 100px;
+    height: 120px;
+}
 /* Navbar style */
 .footer {
     margin-top: 30px; 
