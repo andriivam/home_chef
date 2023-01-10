@@ -9,7 +9,6 @@
     display: flex;
     align-items: center;
 }
-
 .search-input{
   background-color:transparent;
   border-radius: 50px;
@@ -25,12 +24,9 @@
     background-color:transparent;
     margin-left: -1.6rem;
     font-size: 15px;
-    
 }
-
 .smallLogo{
     height:8rem;
-
 }
 hr{
   background-color: #34785D
