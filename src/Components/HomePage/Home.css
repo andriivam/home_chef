@@ -7,13 +7,15 @@ body{
 
 }
 /* MainSection Style */
+
+.mainSection{
+    margin-top: 30px;
+    margin: 5vw;
+    padding: 2vw;
+}
 .imgC{
     width: 40vw;
     height: 30vw;
-}
-.mainSection{
-    margin: 5vw;
-    padding: 2vw;
 }
 .subHeading{
     margin-bottom: 15px;
