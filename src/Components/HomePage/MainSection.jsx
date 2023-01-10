@@ -1,6 +1,5 @@
 import React from 'react'
 import './Home.css'
-<<<<<<< HEAD
 
 import { testData } from '../../data'
 console.log(testData[0].cuisineType)
@@ -18,21 +17,4 @@ export default function MainSection() {
             )
         })
     )   
-=======
-import Catagories from './Catagories'
-
-
-export default function MainSection() {
-    return(
-        <div className = "mainSection">
-            <div className="subHeading">
-                <h3>Category</h3>
-            </div>
-            <div className="catagorySection">
-                <Catagories/>
-            </div>
-
-        </div>
-    )
->>>>>>> e580163b06b94aba68d604b48cb68f6dc0194e94
 }
