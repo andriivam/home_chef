@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+<<<<<<< HEAD
 /* Search Bar + small logo */
 
 .App-header{
@@ -42,6 +43,16 @@ hr{
 .imgCatageory{
     width: 100px;
     height: 120px;
+=======
+/* MainSection Style */
+.imgCatageory{
+    width: 10px;
+    height: 30px;
+}
+.catagoryEach{
+    display: flex;
+    flex-wrap: wrap;
+>>>>>>> e580163b06b94aba68d604b48cb68f6dc0194e94
 }
 /* Navbar style */
 .footer {
