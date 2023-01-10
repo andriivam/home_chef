@@ -5,8 +5,12 @@
 }
 /* MainSection Style */
 .imgCatageory{
-    width: 100px;
-    height: 120px;
+    width: 10px;
+    height: 30px;
+}
+.catagoryEach{
+    display: flex;
+    flex-wrap: wrap;
 }
 /* Navbar style */
 .footer {
