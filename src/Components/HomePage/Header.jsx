@@ -12,16 +12,17 @@ const Header = () => {
                 <img className ='smallLogo' src={image} alt="Brand Logo"></img>
             </div>
             
-			<div form action="" className="search-bar">
+			<div action="" className="search-bar">
             <input
                 type="text"
-                placeholder="Search here"
+                placeholder=" Search here"
                 className="search-input"
                 ref={inputRef} /> 
-                
+
                 <button className='search-btn' type="submit"><FaSearch /></button>
-                
+                 
             </div>
+            <hr className="line"></hr> 
             
         </header>
     )

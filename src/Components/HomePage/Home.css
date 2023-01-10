@@ -23,12 +23,24 @@
     border: none;
     color: #34785D;  
     background-color:transparent;
-    margin-left: -1.4rem;
+    margin-left: -1.6rem;
     font-size: 15px;
-    align-items: center;
+    
 }
 
 .smallLogo{
     height:8rem;
 
 }
+.line{
+    background-color: #0853e7;
+    border: none;
+    height: 2px;
+    margin: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+    .smallLogo{
+        height:5rem;
+    }
+  }
