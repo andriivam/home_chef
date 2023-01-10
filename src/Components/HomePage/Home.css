@@ -32,11 +32,8 @@
     height:8rem;
 
 }
-.line{
-    background-color: #0853e7;
-    border: none;
-    height: 2px;
-    margin: 2em;
+hr{
+  background-color: #34785D
 }
 
 @media only screen and (max-width: 600px) {
