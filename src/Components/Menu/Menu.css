@@ -1,0 +1,49 @@
+.chefList {
+display: flex;
+justify-content: center;
+margin-top: 2em;
+}
+
+.chefItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imgDiv {
+    width: 150px;
+    height: 140px;
+    margin: 5vw;
+    padding: 2vw;
+}
+
+.chefImg {
+    height: 100%;
+    width: 100%;
+    
+}
+
+.chefCard {
+    display: flex;
+    flex-direction: column;
+    background-color: #34785D;
+    margin: 5vw;
+    padding: 2vw;
+    width: 150px;
+    height: 140px;
+}
+
+
+
+.chefName {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.cuisineDescription {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+

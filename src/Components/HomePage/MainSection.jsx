@@ -1,17 +1,19 @@
 import React from 'react'
 import './Home.css'
 import Catagories from './Catagories'
+import { useLocation, Link } from 'react-router-dom';
 
 export default function MainSection() {
-    
-    return( 
-        <div className ="mainSection">
-            <div className="">
-                <h3 className="h3heading">Category</h3>
+    let url = useLocation();
+    return(
+        <div className = "mainSection">
+            <div className="subHeading">
+                <h3>Category</h3>
             </div>
-            <div className="catagorySection">
-                <Catagories></Catagories>
+            <div className="categorySection">
+            <Link to={`${url.pathname}/ChefList`}><Catagories/></Link>
             </div>
+
         </div>
-    ) 
+    )
 }

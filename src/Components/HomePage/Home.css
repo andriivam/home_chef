@@ -7,9 +7,11 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     /* download roboto slab, Sacramento,Alegreya SC*/
 }
+
 h3{
     font-size: 31px;
 }
+
 p{
     font-size: 19px;
 }
@@ -26,8 +28,9 @@ p{
     padding-left: 2vw;
     
 }
+
 .search-input{
-  background-color:transparent;
+  background-color: transparent;
   border-radius: 50px;
   outline: none;
   border: 2px solid #34785D;
@@ -36,6 +39,7 @@ p{
   width: 65vw;
   /* 2,15rem */
 }
+
 .search-btn{
     border: none;
     color: #34785D;  
@@ -43,9 +47,11 @@ p{
     margin-left: -1.6rem;
     font-size: 15px;
 }
+
 .smallLogo{
     height:8rem;
 }
+
 hr{
   background-color: #34785D
 }
@@ -57,17 +63,18 @@ hr{
   }
 
 /* MainSection Style */
-.imgCatageory{
-    width: 25vw  ;
+.imgCategory {
+    width: 25vw;
     height: 20vw;
 }
 
-.mainSection{
+.mainSection {
     margin-top: 30px;
     margin: 5vw;
     padding: 2vw;
 }
-.imgC{
+
+.imgC {
     width: 40vw;
     height: 30vw;
     border-radius: 8px;
@@ -75,19 +82,21 @@ hr{
 .h3heading{
     margin-bottom: 15px;
 }
-.catagorySection {
+
+.categorySection {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
 }
-.catagoryEach{
+
+.categoryEach{
     margin-bottom: 5px;
 }
 /* Navbar style */
 .footer {
-    margin-top: 30px;
+    margin-top: 30;
     margin: 5vw;
     padding: 2vw;
     display: flex;
