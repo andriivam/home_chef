@@ -1,20 +1,17 @@
 import React from 'react'
 import './Home.css'
-
-import { testData } from '../../data'
-console.log(testData[0].cuisineType)
-const cuisineData = testData[0].cuisineType
+import Catagories from './Catagories'
 
 export default function MainSection() {
     
     return( 
-        cuisineData.map(type =>{
-            return(
-                <div key={type.id} className="mainSection">
-                    <img className="imgC" src ={type.cuisinePhoto} alt={type.cuisineType+"photo"}></img>
-                    <p>{type.cuisineType}</p>
-                </div>
-            )
-        })
-    )   
+        <div className ="mainSection">
+            <div className="">
+                <h3 className="h3heading">Category</h3>
+            </div>
+            <div className="catagorySection">
+                <Catagories></Catagories>
+            </div>
+        </div>
+    ) 
 }
