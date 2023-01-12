@@ -1,0 +1,62 @@
+/* Style for ChefListComponent */
+.chefList {
+display: flex;
+justify-content: center; 
+margin-top: 2em;
+padding: 0;
+margin: 0;
+width: 100%;
+}
+
+/* Style for ChefItem component */
+.chefItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.imgDiv {
+    width: 35vw;
+    height: 20vh;
+    margin-left: 7vw;
+    margin: 2vw;
+}
+
+.chefImg {
+    height: 100%;
+    width: 100%;
+    
+}
+
+.chefCard {
+    display: flex;
+    flex-direction: column;
+    background-color: #34785D;
+    width: 35vw;
+    height: 20vh;
+    margin-right: 7vw;
+    margin: 2vw;
+}
+
+.chefName {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.cuisineDescription {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Back button style */
+
+.iconBack {
+    color: #000000;
+    background-color: green;
+    border-radius: 50%;
+}
+

@@ -1,18 +1,17 @@
 import './App.css';
-import Footer from './Components/HomePage/Footer';
-import {BrowserRouter as Router, Routes} from 'react-router-dom';
-import Header from './Components/HomePage/Header'
-import MainSection from './Components/HomePage/MainSection';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import HomePage from './Components/HomePage/HomePage';
+import ChefList from './Components/Menu/ChefList';
+import Logo from './Components/Logo/Logo';
 function App() {
   return (
     <div className="App">
-        <Header />
-        <MainSection/>
-      
       <Router>
         <Routes>
+          <Route path="/" element={<Logo/>}/>
+          <Route path="/home" element={<HomePage/>} />
+          <Route path="/home/:ChefList" element={<ChefList />} />
         </Routes>
-        <Footer/>
       </Router>
  
     </div>
