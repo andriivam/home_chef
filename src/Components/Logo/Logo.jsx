@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 
-=======
 import React from "react";
 // import { useMediaQuery } from 'react-responsive'
 import "./Logo.css";
@@ -35,5 +33,4 @@ export default function Logo() {
 //         </div>
 //       )
 //     }
-//   }
->>>>>>> e580163b06b94aba68d604b48cb68f6dc0194e94
+//
