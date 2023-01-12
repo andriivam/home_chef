@@ -1,9 +1,7 @@
 export const testData = [{
 "cuisineType":
    
-    [{"id":1,"cuisineType":"Italian","cuisinePhoto":"https://www.hotelmousai.com/blog/wp-content/uploads/2021/12/Top-10-Traditional-Foods-in-Italy-1140x694.jpg"
-
-},
+    [{"id":1,"cuisineType":"Italian","cuisinePhoto":"https://www.hotelmousai.com/blog/wp-content/uploads/2021/12/Top-10-Traditional-Foods-in-Italy-1140x694.jpg"},
     {"id":2,"cuisineType":"Indian","cuisinePhoto":"https://www.hotelmousai.com/blog/wp-content/uploads/2021/12/Top-10-Traditional-Foods-in-Italy-1140x694.jpg"},
     {"id":3,"cuisineType":"American","cuisinePhoto":"https://www.hotelmousai.com/blog/wp-content/uploads/2021/12/Top-10-Traditional-Foods-in-Italy-1140x694.jpg"},
     {"id":4,"cuisineType":"Thai","cuisinePhoto":"https://www.hotelmousai.com/blog/wp-content/uploads/2021/12/Top-10-Traditional-Foods-in-Italy-1140x694.jpg"},
@@ -16,7 +14,7 @@ export const testData = [{
     "Login":
         {"id":1,"email":"homechef@app.com","password":"homechef"},
     "chefTable":
-        {"id":1,"aboutMe":"I am chef Mario. I like to cook Italian Food. I love pizza.","cuisineType":1,"rating":4,"postCode":1000,"chefPhoto":null},
+        {"id":1,"aboutMe":"Mario","cuisineType":1,"rating":4,"postCode":1000,"chefPhoto":null},
     "cuisineInter":
         {"id":1,"chefTable_id":1,"cuisineType_id":1},
     "cuisineType":
@@ -37,7 +35,7 @@ export const testData = [{
         "Login":
             {"id":2,"email":"homechef@app.com","password":"homechef"},
         "chefTable":
-            {"id":2,"aboutMe":"I am chef Mario. I like to cook Italian Food. I love pizza.","cuisineType":2,"rating":4,"postCode":1000,"chefPhoto":null},
+            {"id":2,"aboutMe":"I am chef Mario. I like to cook Italian Food.","cuisineType":2,"rating":4,"postCode":1000,"chefPhoto":null},
         "cuisineInter":
             {"id":2,"chefTable_id":2,"cuisineType_id":2},
         "cuisineType":
@@ -57,7 +55,7 @@ export const testData = [{
             "Login":
                 {"id":3,"email":"homechef@app.com","password":"homechef"},
             "chefTable":
-                {"id":3,"aboutMe":"I am chef Mario. I like to cook Italian Food. I love pizza.","cuisineType":3,"rating":4,"postCode":3000,"chefPhoto":null},
+                {"id":3,"aboutMe":"I am chef Mario. I like to cook Italian Food.","cuisineType":3,"rating":4,"postCode":3000,"chefPhoto":null},
             "cuisineInter":
                 {"id":3,"chefTable_id":3,"cuisineType_id":3},
             "cuisineType":
@@ -78,7 +76,7 @@ export const testData = [{
                 "Login":
                     {"id":4,"email":"homechef@app.com","password":"homechef"},
                 "chefTable":
-                    {"id":4,"aboutMe":"I am chef Mario. I like to cook Italian Food. I love pizza.","cuisineType":1,"rating":4,"postCode":1000,"chefPhoto":null},
+                    {"id":4,"aboutMe":"I am chef Mario. I like to cook Italian Food.","cuisineType":1,"rating":4,"postCode":1000,"chefPhoto":null},
                 "cuisineInter":
                     {"id":2,"chefTable_id":2,"cuisineType_id":2},
                 "cuisineType":
