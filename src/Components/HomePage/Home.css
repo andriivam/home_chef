@@ -12,7 +12,7 @@ h3{
     font-size: 31px;
 }
 
-p{
+p {
     font-size: 19px;
 }
 /*header */
@@ -79,6 +79,7 @@ hr{
     height: 30vw;
     border-radius: 8px;
 }
+
 .h3heading{
     margin-bottom: 15px;
 }
@@ -94,9 +95,10 @@ hr{
 .categoryEach{
     margin-bottom: 5px;
 }
+
 /* Navbar style */
 .footer {
-    margin-top: 30;
+    margin-top: 30px;
     margin: 5vw;
     padding: 2vw;
     display: flex;
