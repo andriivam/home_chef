@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Alegreya SC'
+}
+h3{
+    font-size: 31px;
+    font-family: 'Sacramento', cursive;
+    
+}
+p{
+    font-size: 19px;
+    font-family: 'Roboto Slab';
+}
+
+
+/* FORM */
+
+.background{
+    margin-top: 20px;
+    padding: 2vw;
+ }
+
+ .container{
+    margin: 2vx;
+ }
+
+.fl{
+  float: left;
+  width: 110px;
+  line-height: 35px;
+  padding: 0.5 vw;
+}
+
+.fontLabel{
+  color: rgb(12, 12, 12);
+}
+
+.fr{
+	float: right;
+    
+}
+
+.clr{
+	clear: both;
+}
+
+.box{
+	width: 360px;
+	height: 30px;
+	margin-top: 10px;
+	font-family: 'Roboto Slab';
+	font-size: 15px;
+   
+}
+
+.textBox{
+	height: 25px;
+	width: 190px;
+	border: none;
+   outline:none;
+  border-bottom: 2px solid  #34785D;
+}
+
+.new{
+  float: left;
+}
+
+.iconBox{
+	height: 35px;
+	width: 40px;
+	line-height: 38px;
+	text-align: center;
+    background: #34785D;
+    color: white;
+}
+
+.terms{
+	line-height: 30px;
+	text-align: center;
+	background: #34785D;
+	color: white;
+}
+
+.submit{
+	float: right;
+	border: none;
+	color: white;
+	width: 110px;
+	height: 35px;
+	background: #34785D;
+	text-transform: uppercase;
+    cursor: pointer;
+}
