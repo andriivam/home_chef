@@ -1,0 +1,17 @@
+
+.chefPic1{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    
+}
+.chefProfileMainDiv{
+    Margin: 10px;
+}
+p{
+    font-size: 16px;
+}
+.chefProfileMainDiv{
+    height: 132vw;
+}
