@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Alegreya SC'
+}
+h3{
+    font-size: 31px;
+    font-family: 'Sacramento', cursive;
+    
+}
+p{
+    font-size: 19px;
+    font-family: 'Roboto Slab';
+}
+
+
+/* Become a chef form */
+
