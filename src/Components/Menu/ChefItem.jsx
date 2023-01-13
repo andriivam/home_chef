@@ -2,8 +2,6 @@ import React from 'react';
 import { testData } from '../../data';
 import './Menu.css';
 
-
-
 console.clear();
 console.log(testData)
 console.log(testData[0].cuisineType[0].cuisineType)
