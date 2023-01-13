@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Alegreya SC'
+}
+h3{
+    font-size: 31px;
+    font-family: 'Sacramento', cursive;
+	margin: 20px
+    
+}
+p{
+    font-size: 19px;
+    font-family: 'Roboto Slab';
+}
+
+
+/* CHEF FORM */
+
+.form-container {
+	background-color: white;
+	padding: 20px;
+  }
+  
+  .input-field {
+	font-size: 16px;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 2px solid #34785D;
+	color: #333;
+  }
+  
+  .avatar-upload-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	background-color: #eee;
+	border-radius: 50%;
+	overflow: hidden;
+  }
+  
+  .avatar-upload-container input[type='file'] {
+	display: none;
+  }
+  
+  .avatar-upload-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+  
+  .avatar-upload-container .upload-text {
+	font-size: 20px;
+	color: #34785D;
+  }
+  
+  .submit-button {
+	float: left;
+    border: none;
+    color: white;
+    width: 110px;
+    height: 35px;
+    background: #34785D;
+    text-transform: uppercase;
+    cursor: pointer;
+	font-family: 'Alegreya SC';
+  }
+  
+.upload-text:hover {
+    cursor: pointer;
+    color: #34785D;
+}
+.dish-container input{
+	width: 100%;
+}
+
+textarea {
+    resize: none;
+
+}
+  hr{
+	background-color: #34785D
+  }  
+
+  .dish-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+	width: 200%;
+}
+
+.input-field[type="file"]::-webkit-file-upload-button {
+	visibility: hidden;
+  }
+
+.chooseFile[type="file"]::before {
+	  content: "Choose a file";
+	  border: none;
+	  color: white;
+	  width: 110px;
+	  height: 35px;
+	  background: #34785D;
+	  text-transform: uppercase;
+	  cursor: pointer;
+	  text-align: center;
+	  padding:5px 10px;
+	  white-space: nowrap;
+	  margin: -20px;
+	}
+  
