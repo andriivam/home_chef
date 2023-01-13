@@ -4,7 +4,7 @@ import { FaHome, FaPhoneAlt, FaEnvelope, FaUserAlt } from 'react-icons/fa';
 import {MdPassword} from 'react-icons/md';
 
 
-export default function MainSection() {
+export default function UserForm() {
     
     return( 
         <div className='background'>
