@@ -19,7 +19,7 @@ export default function MenuContent() {
 
   return (
     <div className='menuContent'>
-        <img src = {menuTable.menuPhoto}/>
+        <img src = {menuTable.menuPhoto} alt="menuPhoto"/>
         <h4>{menuTable.name}</h4>
         <div className='miniPara'>
             <p>Chef Name</p>
