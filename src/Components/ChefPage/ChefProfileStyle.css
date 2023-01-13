@@ -1,17 +1,35 @@
+.chefProfileMainDiv{
+    Margin: 5vw;
+    padding: 2vw;
+    
+}
 
 .chefPic1{
-    height: 100px;
-    width: 100px;
+    height: 25vh;
+    width: 86vw;
     border-radius: 10px;
     object-fit: cover;
+    /* padding-bottom: 15px; */
+    
+}
+
+p{
+    font-size: 15px;
     
 }
 .chefProfileMainDiv{
-    Margin: 10px;
-}
-p{
-    font-size: 16px;
-}
-.chefProfileMainDiv{
     height: 132vw;
+}
+.chefName{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.chefaboutMe{
+    padding-bottom: 10px;
+}
+.chefRating{
+    margin-bottom: 10px;
+}
+.menuHeading{
+    align-content: center;
 }

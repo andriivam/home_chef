@@ -16,7 +16,7 @@ export const testData = [{
     "Login":
         {"id":1,"email":"homechef@app.com","password":"homechef"},
     "chefTable":
-        {"id":1,"aboutMe":"I am chef Mario. I like to cook Italian Food. I love pizza.","cuisineType":1,"rating":4,"postCode":1000,"chefPhoto":"https://www.hotelmousai.com/blog/wp-content/uploads/2021/12/Top-10-Traditional-Foods-in-Italy-1140x694.jpg"},
+        {"id":1,"aboutMe":"I am chef Mario. I like to cook Italian Food. I love pizza.I believe every dish should have three very important ingredients: dedication, passion and love! My menu will bring you the taste of Spain from land to sea with exciting flavours and great ingredients","cuisineType":1,"rating":4,"postCode":1000,"chefPhoto":"https://images.pexels.com/photos/6605418/pexels-photo-6605418.jpeg"},
     "cuisineInter":
         {"id":1,"chefTable_id":1,"cuisineType_id":1},
     "cuisineType":
