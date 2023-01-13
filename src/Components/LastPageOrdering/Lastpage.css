@@ -1,0 +1,34 @@
+
+
+.lastpage {
+  width: 100vw;
+  height: 100vh;
+  background-color: #34785d;
+}
+
+.lastpagelogo {
+  margin-top: 20%;
+width: 100vw;
+height: 100vw;
+}
+
+/* .lastpagethanks{
+
+}
+
+lastpageback{
+  
+} */
+/* @media only screen and (min-width: 1224px) { 
+   
+    .logoButton{size:300px;
+
+    
+   } } */
+
+@media only screen and (max-width: 600px) {
+  .logoButton {
+    height: 10px;
+    border: red solid 2px;
+  }
+}
