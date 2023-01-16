@@ -3,16 +3,16 @@ import { testData } from '../../data'
 import './ChefProfileStyle.css'
 
 console.log(testData[0].users)
-const cuisineData = testData[0].cuisineType
+// const cuisineData = testData[0].cuisineType
 const user_data = testData[0].users[0]
-let incomingUserId = 1
+// let incomingUserId = 1
 
 export default function ChefProfile() { 
 
     return(
         <div className="chefProfileMainDiv">
             <div>
-                <img className="chefPic1" src={user_data.chefTable.chefPhoto} alt="Chef Photo"></img>
+                <img className="chefPic1" src={user_data.chefTable.chefPhoto} alt="Chef"></img>
             </div>
             <div>
                 <h2 className='chefName'>{user_data.userTable.name} {user_data.userTable.pre_nom}</h2>
