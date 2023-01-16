@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom';
 import { testData } from '../../data'
 import "./ChefMenu.css"
 
@@ -15,7 +16,10 @@ export default function ChefMenu() {
           <div>
         <div className="chefMenu">
           <div className="menuItem1">
+          <Link to="/:id/chefProfileFull/:id/Menu">
             <img className="menuPic1"src={menu_detail.menuPhoto} alt="menu"></img>
+          </Link>
+
               <div className="menufood1">
                   <h5 className="menuItemName">{menu_detail.name}</h5>
                   <p className="menuItemDes">{menu_detail.description}</p>
@@ -23,6 +27,7 @@ export default function ChefMenu() {
                   <p className="menuItemDate"><b>Available for:</b> {menu_detail.date}</p>
               </div>
             </div>
+          
         </div>
     </div>
         )

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import { testData } from '../../data';
 import './Menu.css';
 
@@ -10,7 +11,7 @@ export default function ChefItem({ id }) {
 
   for (let i = 0; i < kitchenId.length; i++) {
 
-    if (kitchenId[i].chefTable.cuisineType === `${id}`) {
+    if (kitchenId[i].chefTable.cuisineType == `${id}`) {
       console.log(id, kitchenId[i].chefTable.cuisineType, 'map result')
       let result = [];
       result.push(kitchenId[i]);
@@ -25,7 +26,7 @@ export default function ChefItem({ id }) {
               return (
                 <div key={type.id} className="chefItem">
                   <div className="imgDiv">
-                    <img className="chefImg" src={null} alt="chef" />
+                    <Link to={`/home/:id/ChefList/:id/chefProfileFull`}> <img className="chefImg" src={null} alt="chef" /></Link>
                   </div>
                   <div className="chefCard">
                     <h3 className="chefName">{type.userTable.name}</h3>

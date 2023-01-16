@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import {NavLink} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import { FaHome, FaTasks, FaShoppingBasket, FaUserAlt } from 'react-icons/fa';
 
 export default function Footer() {
@@ -8,10 +8,10 @@ export default function Footer() {
     <footer>
       <hr/>
 <ul className="footer">
-    <li className="navbar"><NavLink to="/home" className="icon"><FaHome/></NavLink></li>
-    <li className="navbar"><NavLink to="/" className="icon"><FaTasks/></NavLink></li>
-    <li className="navbar"><NavLink className="icon"><FaShoppingBasket/></NavLink></li>
-    <li className="navbar"><NavLink className="icon"><FaUserAlt/></NavLink></li>
+    <li className="navbar"><Link to="/" className="icon"><FaHome/></Link></li>
+    <li className="navbar"><Link to="" className="icon"><FaTasks/></Link></li>
+    <li className="navbar"><Link className="icon"><FaShoppingBasket/></Link></li>
+    <li className="navbar"><Link to="/home/Loginpage" className="icon"><FaUserAlt/></Link></li>
 </ul>
     </footer>
   )
