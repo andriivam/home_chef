@@ -14,13 +14,9 @@ export const testData = [{
     [
     {
     "Login":
-        {"id":1,"email":"homechef@app.com","password":"homechef"},
+        {"id":1,"email":"homechef@app.com","password": "homechef"},
     "chefTable":
-<<<<<<< HEAD
-        {"id":1,"aboutMe":"I am chef Mario. I like to cook Italian Food. I love pizza.I believe every dish should have three very important ingredients: dedication, passion and love! My menu will bring you the taste of Spain from land to sea with exciting flavours and great ingredients","cuisineType":1,"rating":4,"postCode":1000,"chefPhoto":"https://images.pexels.com/photos/6605418/pexels-photo-6605418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"},
-=======
         {"id":1,"aboutMe":"Mario","cuisineType": 1,"rating":4,"postCode":1000,"chefPhoto":null},
->>>>>>> d651c338b744c9b91e8cc824e1ce09471b51e991
     "cuisineInter":
         {"id":1,"chefTable_id":1,"cuisineType_id":1},
     
