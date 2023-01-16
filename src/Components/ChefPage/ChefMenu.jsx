@@ -10,7 +10,7 @@ export default function ChefMenu() {
   return (
     <div>
         <div className="chefMenu">
-            <img className="menupic1"src={menu_detail.menuPhoto}></img>
+            <img className="menupic1" src={menu_detail.menuPhoto} alt="menu"></img>
             <div className="menufood1">
                 <h2>{menu_detail.name}</h2>
                 <p>{menu_detail.description}</p>
