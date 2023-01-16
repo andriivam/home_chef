@@ -30,7 +30,7 @@ export default function ChefProfile() {
                         <div>
                             <h2 className='chefName'>{ChefName} {ChefPre_nom}</h2>
                             <p className="chefRating"><b>Chef Rating:</b>  {user.chefTable.rating}</p>
-                            <p className='chefaboutMe'>{user.chefTable.aboutMe}</p>
+                            <p className='chefaboutMe'>&nbsp; &nbsp; &nbsp;{user.chefTable.aboutMe}</p>
                             {/* <p>Cuisine Type: {cuisine_type}</p> */}
                             <h2 className="menuHeading"> {ChefName}'s Menu</h2>
                             

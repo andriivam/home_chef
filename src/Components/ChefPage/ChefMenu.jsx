@@ -2,6 +2,7 @@ import React from 'react'
 import { testData } from '../../data'
 import "./ChefMenu.css"
 
+
 console.log(testData[0].users)
 const users = testData[0].users
 const menu_detail = testData[0].users[0].menuDetails[0]
@@ -10,12 +11,14 @@ export default function ChefMenu() {
   return (
     <div>
         <div className="chefMenu">
-            <img className="menupic1"src={menu_detail.menuPhoto}></img>
-            <div className="menufood1">
-                <h2>{menu_detail.name}</h2>
-                <p>{menu_detail.description}</p>
-                <p>{menu_detail.price}</p>
-                <p>{menu_detail.date}</p>
+          <div className="menuItem1">
+            <img className="menuPic1"src={menu_detail.menuPhoto}></img>
+              <div className="menufood1">
+                  <h5 className="menuItemName">{menu_detail.name}</h5>
+                  <p className="menuItemDes">{menu_detail.description}</p>
+                  <p className="menuItemPrice">€ {menu_detail.price}</p>
+                  <p className="menuItemDate"><b>Available for:</b> {menu_detail.date}</p>
+              </div>
             </div>
         </div>
     </div>
