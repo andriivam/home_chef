@@ -14,7 +14,7 @@ export const testData = [{
     [
     {
     "Login":
-        {"id":1,"email":"homechef@app.com","password":"homechef"},
+        {"id":1,"email":"homechef@app.com","password": "homechef"},
     "chefTable":
         {"id":1,"aboutMe":"Mario","cuisineType": 1,"rating":4,"postCode":1000,"chefPhoto":null},
     "cuisineInter":

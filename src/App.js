@@ -21,7 +21,7 @@ function App() {
           <Route path="/" element={<Lastpage/>}/>
           <Route path="/" element={<MenuHamburger/>}/>
           <Route path="/home" element={<HomePage/>} />
-          <Route path="/home/:ChefList" element={<ChefList />} />
+          <Route path="/home/:id/ChefList" element={<ChefList />} />
           <Route path="/home/Menu" element={<Menu/>}/>
         </Routes>
        
