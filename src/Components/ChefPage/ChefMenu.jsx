@@ -15,7 +15,7 @@ export default function ChefMenu() {
           <div>
         <div className="chefMenu">
           <div className="menuItem1">
-            <img className="menuPic1"src={menu_detail.menuPhoto}></img>
+            <img className="menuPic1"src={menu_detail.menuPhoto} alt="menu"></img>
               <div className="menufood1">
                   <h5 className="menuItemName">{menu_detail.name}</h5>
                   <p className="menuItemDes">{menu_detail.description}</p>
