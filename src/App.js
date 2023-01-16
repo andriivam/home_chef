@@ -1,4 +1,3 @@
-
 import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
@@ -19,12 +18,9 @@ function App() {
           <Route path="/" element={<Loginpage/>}/>
           <Route path="/" element={<Lastpage/>}/>
           <Route path="/" element={<MenuHamburger/>}/>
-
-
-
           <Route path="/home" element={<HomePage/>} />
           <Route path="/home/:ChefList" element={<ChefList />} />
-          {/* <Route path="/home/Menu" element={<Menu/>}/> */}
+          <Route path="/home/Menu" element={<Menu/>}/>
         </Routes>
       </Router>
       
