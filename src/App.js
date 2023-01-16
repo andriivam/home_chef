@@ -1,6 +1,5 @@
 import React from 'react';
-import './App.css';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './Components/HomePage/HomePage';
 import ChefList from './Components/Menu/ChefList';
 import Logo from './Components/Logo/Logo';
@@ -10,6 +9,7 @@ import Loginpage from './Components/LoginPage/Loginpage';
 import MenuHamburger from './Components/MenuHamburger/MenuHamburger';
 
 function App() {
+
   return (
     <div className="App">
       <Router>
@@ -19,8 +19,8 @@ function App() {
           <Route path="/" element={<Lastpage/>}/>
           <Route path="/" element={<MenuHamburger/>}/>
           <Route path="/home" element={<HomePage/>} />
-          <Route path="/home/:ChefList" element={<ChefList />} />
           <Route path="/home/Menu" element={<Menu/>}/>
+          <Route path="/home/:id/ChefList" element={<ChefList/>} />
         </Routes>
       </Router>
       
