@@ -2,10 +2,10 @@ import React from 'react'
 import { testData } from '../../data'
 import "./ChefMenu.css"
 
-console.log(testData[0].users)
-const users = testData[0].users
+// console.log(testData[0].users)
+// const users = testData[0].users
 const menu_detail = testData[0].users[0].menuDetails[0]
-    console.log(menu_detail)
+    // console.log(menu_detail)
 export default function ChefMenu() {
   return (
     <div>

@@ -1,8 +1,44 @@
 .chefMenu{
     Margin: 5vw;
     padding: 2vw;
+    
 }
-.menupic1{
-    height: 22vh;
-    width: 50vw;
+.menuPic1{
+    height: 18vh;
+    width: 32vw;
+    margin-right: 15px;
+    border-radius: 10px;
+    object-fit: cover;
 }
+.menuItem1{
+    display: flex;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-color: grey;
+    border: 1px solid #b0afaf;
+    border-radius: 10px;
+    padding:10px;
+    /* margin: 10px; */
+    
+
+}
+.menuItemName{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.menuItemDes{
+    font-size: 10px;
+    margin-bottom: 8px;
+}
+.menuItemDate{
+    font-size: 10px;
+}
+.menuItemPrice{
+    font-size: 12px;
+   color: #34785D;
+   margin-bottom: 8px;
+}
+
+
+
