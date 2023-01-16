@@ -5,6 +5,7 @@ import ChefList from './Components/Menu/ChefList';
 import Logo from './Components/Logo/Logo';
 import Menu from './Components/MenuPage/Menu';
 
+
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
           <Route path="/home/:ChefList" element={<ChefList />} />
           <Route path="/home/Menu" element={<Menu/>}/>
         </Routes>
+       
       </Router>
       
     </div>
