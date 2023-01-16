@@ -4,19 +4,16 @@ import HomePage from './Components/HomePage/HomePage';
 import ChefList from './Components/Menu/ChefList';
 import Logo from './Components/Logo/Logo';
 import Menu from './Components/MenuPage/Menu';
-import Lastpage from './Components/LastPageOrdering/Lastpage';
-import Loginpage from './Components/LoginPage/Loginpage';
-import MenuHamburger from './Components/MenuHamburger/MenuHamburger';
-import ChefMenu from './Components/ChefPage/ChefMenu';
-import ChefProfile from './Components/ChefPage/ChefProfile';
+// import ChefMenu from './Components/ChefPage/ChefMenu';
+// import ChefProfile from './Components/ChefPage/ChefProfile';
 
 
 function App() {
 
   return (
     <div className="App">
-      {<ChefProfile/>}
-      {<ChefMenu/>}
+      {/* {<ChefProfile/>}
+      {<ChefMenu/>} */}
       <Router>
         <Routes>
           <Route path="/" element={<Logo/>}/>
@@ -24,8 +21,8 @@ function App() {
           <Route path="/" element={<Lastpage/>}/>
           <Route path="/" element={<MenuHamburger/>}/>
           <Route path="/home" element={<HomePage/>} />
+          <Route path="/home/:ChefList" element={<ChefList />} />
           <Route path="/home/Menu" element={<Menu/>}/>
-          <Route path="/home/:id/ChefList" element={<ChefList/>} />
         </Routes>
        
       </Router>
