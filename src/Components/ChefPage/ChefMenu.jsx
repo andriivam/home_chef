@@ -4,12 +4,15 @@ import "./ChefMenu.css"
 
 
 console.log(testData[0].users)
-const users = testData[0].users
-const menu_detail = testData[0].users[0].menuDetails[0]
-    console.log(menu_detail)
+// const user_data = testData[0].users
+const menu_details = testData[0].users[0].menuDetails
+    // console.log(menu_detail)
 export default function ChefMenu() {
+
   return (
-    <div>
+      menu_details.map(menu_detail =>{
+        return(
+          <div>
         <div className="chefMenu">
           <div className="menuItem1">
             <img className="menuPic1"src={menu_detail.menuPhoto}></img>
@@ -22,6 +25,9 @@ export default function ChefMenu() {
             </div>
         </div>
     </div>
+        )
+      })
+    
   )
 }
 
