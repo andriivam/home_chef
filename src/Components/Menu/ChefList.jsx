@@ -10,7 +10,7 @@ export default function ChefList() {
   return (
     <div className="chefList">
       <Link to="/home"><FaBackward className="iconBack" /></Link>
-   <ChefItem id={id}/>
+      <ChefItem id={id}/>
       {/* <Footer/> */}
     </div>
   )

@@ -11,7 +11,7 @@ export default function ChefItem({ id }) {
 
   for (let i = 0; i < kitchenId.length; i++) {
 
-    if (kitchenId[i].chefTable.cuisineType === `${id}`) {
+    if (kitchenId[i].chefTable.cuisineType == `${id}`) {
       console.log(id, kitchenId[i].chefTable.cuisineType, 'map result')
       let result = [];
       result.push(kitchenId[i]);

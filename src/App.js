@@ -20,12 +20,13 @@ function App() {
           <Route path="/" element={<Logo/>}/>
           <Route path="/home" element={<HomePage/>} />
           <Route path="/home/:id/ChefList" element={<ChefList />} />
-          <Route path="/home/Menu" element={<Menu/>}/>
+         
           <Route path="/home/LoginPage" element={<LoginPage/>}/>
           <Route path="/home/chefForm" element={<ChefForm/>}/>
           <Route path="/home/chefForm/chefMenu" element={<ChefMenu/>}/>
           <Route path="/home/chefForm/userForm" element={<UserForm/>}/>
           <Route path="/home/:id/ChefList/:id/chefProfileFull" element={<ChefProfileFull />} />
+          <Route path="/:id/chefProfileFull/:id/Menu" element={<Menu/>}/>
         </Routes>
        
       </Router>
