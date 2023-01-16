@@ -2,23 +2,32 @@ import React from 'react'
 import { testData } from '../../data'
 import "./ChefMenu.css"
 
+
 console.log(testData[0].users)
-const users = testData[0].users
-const menu_detail = testData[0].users[0].menuDetails[0]
-    console.log(menu_detail)
+// const user_data = testData[0].users
+const menu_details = testData[0].users[0].menuDetails
+    // console.log(menu_detail)
 export default function ChefMenu() {
+
   return (
-    <div>
+      menu_details.map(menu_detail =>{
+        return(
+          <div>
         <div className="chefMenu">
-            <img className="menupic1"src={menu_detail.menuPhoto}></img>
-            <div className="menufood1">
-                <h2>{menu_detail.name}</h2>
-                <p>{menu_detail.description}</p>
-                <p>{menu_detail.price}</p>
-                <p>{menu_detail.date}</p>
+          <div className="menuItem1">
+            <img className="menuPic1"src={menu_detail.menuPhoto} alt="menu"></img>
+              <div className="menufood1">
+                  <h5 className="menuItemName">{menu_detail.name}</h5>
+                  <p className="menuItemDes">{menu_detail.description}</p>
+                  <p className="menuItemPrice">€ {menu_detail.price}</p>
+                  <p className="menuItemDate"><b>Available for:</b> {menu_detail.date}</p>
+              </div>
             </div>
         </div>
     </div>
+        )
+      })
+    
   )
 }
 

@@ -1,6 +1,6 @@
 import './Home.css';
 import React, {useRef} from "react"
-import image from "../../HomeChef_images/Main Page Images/logorond.png"
+import image from "../../HomeChef_images/MainPageImages/logorond.png"
 import { FaSearch } from 'react-icons/fa';
 
 const Header = () => {

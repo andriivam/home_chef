@@ -7,7 +7,7 @@ export default function RoughPage() {
     const [cheflist, setCheflist] = useState(()=>{return []})
     users.map(user=>{
         if(user.chefTable.cuisineType === propsId){
-            setCheflist(oldArray =>[...oldArray,user])
+            setCheflist(oldArray => [...oldArray,user])
         }
     })
     console.log(cheflist)

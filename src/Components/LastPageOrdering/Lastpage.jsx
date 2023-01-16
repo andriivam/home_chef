@@ -10,33 +10,19 @@ import {Link} from 'react-router-dom';
 
 export default function Lastpage() {
   return (
-    <div className="lastpage">
+    <div className="lastpage" align="center" >
       <Link to="/home">
         <img src={image} alt='Logo' />
       </Link>
-      {/* <h3 className="lastpagethanks">THANKS FOR ORDERING</h3>
-      <button className="lastpageback">
+      <div className="lastpage" background-color="#34785d">
+      <h3 className="lastpagethanks" align="center"  font-family='Roboto Slab'>THANKS FOR ORDERING</h3>
+      <Link to="/home" className="lastpageback" align="center" color="#FFFFFF" font-family='Roboto Slab'>
         Back to the Homepage
-      </button> */}
+      </Link>
+      
+      </div>
+
     </div>
   );
 }
 
-// class redirection extends Component {
-
-//     faireRedirection=()=> {
-//       let url = "maNouvelleURL"
-//       let history = useHistory()
-//       history.push(url)
-//     }
-
-//     render() {
-//       return (
-//         <div>
-//         <Button onClick={this.faireRedirection} style={{backgroundImage:"url('./images/images.png')",backgroundSize:"cover", width:"40px", height:"40px"}}>
-
-//         </Button>
-//         </div>
-//       )
-//     }
-//   }

@@ -1,5 +1,5 @@
 .chefProfileMainDiv{
-    Margin: 5vw;
+    margin: 5vw;
     padding: 2vw;
     
 }
@@ -17,12 +17,14 @@ p{
     font-size: 15px;
     
 }
-.chefProfileMainDiv{
+/* .chefProfileMainDiv{
     height: 132vw;
-}
+} */
 .chefName{
     padding-top: 15px;
     padding-bottom: 15px;
+    font-size: 26px;
+    text-align: left;
 }
 .chefaboutMe{
     padding-bottom: 10px;
@@ -31,5 +33,5 @@ p{
     margin-bottom: 10px;
 }
 .menuHeading{
-    align-content: center;
+    margin-bottom: 0px;
 }
