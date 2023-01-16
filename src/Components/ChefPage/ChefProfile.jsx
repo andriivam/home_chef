@@ -3,7 +3,7 @@ import { testData } from '../../data'
 import './ChefProfileStyle.css'
 
 console.log(testData[0].users)
-const cuisineData = testData[0].cuisineType
+// const cuisineData = testData[0].cuisineType
 const users = testData[0].users
 let incomingUserId = 1
 
