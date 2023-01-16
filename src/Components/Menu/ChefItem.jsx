@@ -7,7 +7,6 @@ export default function ChefItem({ id }) {
   console.log(`/home/${id}/ChefList/`, 'link with id');
   const kitchenId = testData[0].users;
   console.log(kitchenId, 'kitchenId');
-  // chefTable.cuisineType;
 
   for (let i = 0; i < kitchenId.length; i++) {
 
