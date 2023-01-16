@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { testData } from '../../data'
 import './ChefProfileStyle.css'
 

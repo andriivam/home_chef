@@ -5,22 +5,16 @@ function RegisterForm() {
   const [avatar, setAvatar] = useState(null);
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
-  const [dishImage, setDishImage] = useState(null);
-  const [dishDescription, setDishDescription] = useState('');
+  
 
   const handleAvatarUpload = (event) => {
     setAvatar(event.target.files[0]);
-  };
-
-  const handleDishImageUpload = (event) => {
-    setDishImage(event.target.files[0]);
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     // handle form submission here
 	console.log(avatar);
-    console.log(dishImage);
   };
 
   return (
@@ -49,21 +43,13 @@ function RegisterForm() {
 	</label>
       <br />
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
-	  <div className="dish-container">
-    <label>
-        Dish Image:
-        <input className="input-field hide-file-text chooseFile" type="file"  onChange={handleDishImageUpload} accept="image/*" />
-    </label>
-    <label>
-        Dish Description: <br/>
-        <textarea className="input-field" type="text" value={dishDescription} onChange={(event) => setDishDescription(event.target.value)} />
-    </label>
-</div>
+	  </div>
+<br />
+<button className="submit-button" type="submit">Upload your Menu</button><br/><br/>
+<button className="submit-button" type="submit">Submit</button>
+</form> 
 
 </div>
-<br />
-<button className="submit-button" type="submit">Submit</button>
-</form></div>
 );
 }
 

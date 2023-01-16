@@ -38,6 +38,7 @@ p{
 	border: none;
 	border-bottom: 2px solid #34785D;
 	color: #333;
+	font-family: 'Roboto Slab';
   }
   
   .avatar-upload-container {
@@ -99,7 +100,7 @@ textarea {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
-	width: 200%;
+	width: 100%;
 }
 
 .input-field[type="file"]::-webkit-file-upload-button {
@@ -119,5 +120,6 @@ textarea {
 	  padding:5px 10px;
 	  white-space: nowrap;
 	  margin: -20px;
+	  font-family: 'Alegreya SC';
 	}
   
