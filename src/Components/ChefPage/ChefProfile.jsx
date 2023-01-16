@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { testData } from '../../data'
-import { user } from 'pg/lib/defaults';
 import './ChefProfileStyle.css'
 
 console.log(testData[0].users)
