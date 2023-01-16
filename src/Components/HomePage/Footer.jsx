@@ -6,6 +6,7 @@ import { FaHome, FaTasks, FaShoppingBasket, FaUserAlt } from 'react-icons/fa';
 export default function Footer() {
   return (
     <footer>
+      <hr/>
 <ul className="footer">
     <li className="navbar"><NavLink to="/home" className="icon"><FaHome/></NavLink></li>
     <li className="navbar"><NavLink to="/" className="icon"><FaTasks/></NavLink></li>

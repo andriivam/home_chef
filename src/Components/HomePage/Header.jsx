@@ -20,8 +20,7 @@ const Header = () => {
                 <button className='search-btn' type="submit"><FaSearch /></button>
             </div>
             </div>
-            <div>
-            </div>
+            <hr/>
         </header>
         
     )
