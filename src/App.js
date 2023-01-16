@@ -17,6 +17,9 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Logo/>}/>
+          <Route path="/" element={<Loginpage/>}/>
+          <Route path="/" element={<Lastpage/>}/>
+          <Route path="/" element={<MenuHamburger/>}/>
           <Route path="/home" element={<HomePage/>} />
           <Route path="/home/:id/ChefList" element={<ChefList />} />
           <Route path="/home/Menu" element={<Menu/>}/>
