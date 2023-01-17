@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 5px 20px;
+    /* background-color: #34785D;
+   color: #fff; */
+}
+
+.head {
+    margin-bottom: 20px;
+}
+
+/* Form */
+
+.form {
+    display: flex;
+    flex-direction: column;
+}

@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom';
 // import { Button } from 'react-bootstrap';
 // import { useHistory } from "react-router-dom";
 
-export default function Lastpage() {
+export default function LastPage() {
   return (
     <div className="lastpage" align="center" >
       <Link to="/home">

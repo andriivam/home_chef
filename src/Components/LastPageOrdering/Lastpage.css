@@ -1,26 +1,32 @@
-*{margin: 0;}
+* {
+  margin: 0;
+}
 
 .lastpage {
+
   width: 100vw;
   height: 100vh;
   background-color: #34785d;
 }
 
-.lastpage img{
+.lastpage img {
   margin-top: 20%;
   width: 50vw;
-  height: 50vw;;
+  height: 50vw;
 }
-.lastpagethanks{
-  color:white;
+
+.lastpagethanks {
+
+  color: white;
   margin-bottom: 20px;
   margin-top: 50px;
 }
 
-.lastpageback{
-  color:white;
-
+.lastpageback {
+  
+  color: white;
 }
+
 /* .lastpagethanks{
 
 }
