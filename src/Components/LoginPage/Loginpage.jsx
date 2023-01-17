@@ -18,9 +18,9 @@ export default function LoginPage() {
         <img src={image} alt='Logo' />
       </Link>
 
-      <div classeName='loginpageformu'>
+      <div className='loginpageformu'>
 
-        <form classeName='loginpageform' align='left' color="#000000">
+        <form className='loginpageform' align='left' color="#000000">
 
 
           <div className="Loginpageformu">

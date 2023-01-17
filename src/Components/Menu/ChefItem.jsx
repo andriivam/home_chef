@@ -1,4 +1,5 @@
 import React from 'react';
+import { v4 as uuidv4 } from "uuid";
 import {Link} from 'react-router-dom';
 import { testData } from '../../data';
 import './Menu.css';
@@ -24,7 +25,7 @@ export default function ChefItem({ id }) {
           <div className='allChefList'>
             {result.map((type) => {
               return (
-                <div key={type.id} className="chefItem">
+                <div key={uuidv4()} className="chefItem">
                   <div className="imgDiv">
                     <Link to={`/home/:id/ChefList/:id/chefProfileFull`}> <img className="chefImg" src={null} alt="chef" /></Link>
                   </div>
@@ -38,6 +39,7 @@ export default function ChefItem({ id }) {
           </div>
         </div>
       )
+     
     }
   }
 
