@@ -1,3 +1,5 @@
+@import '../../node_modules/react-credit-cards/es/styles-compiled.css';
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +21,24 @@
 
 /* Form */
 
-.form {
-    display: flex;
-    flex-direction: column;
+.pay{
+    float: left;
+    border: none;
+    color: white;
+    width: 150px;
+    height: 35px;
+    background: #34785D;
+    cursor: pointer;
+	align-items: center;
+}
+
+input{
+    font-size: 16px;
+	width: 100%;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 2px solid #34785D;
+	color: #333;
+	font-family: 'Roboto Slab';
 }

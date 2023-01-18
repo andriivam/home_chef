@@ -94,6 +94,16 @@ export default function UserForm() {
 						<div className="clr"></div>
 					</div> &nbsp;
 
+					{/* <!---Password----> */}
+					<div className="box">
+						<label htmlFor="password" className="fl fontLabel"> Confirm Password </label>
+						<div className="fl iconBox"><MdPassword /></div>
+						<div className="fr">
+							<input type="Password" required name="password" placeholder="Password" className="textBox" />
+						</div>
+						<div className="clr"></div>
+					</div> &nbsp;
+
 
 					{/* <!--Terms and Conditions------> */}
 					<div className="box terms">
