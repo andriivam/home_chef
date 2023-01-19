@@ -10,12 +10,6 @@
     "package-lock": "^1.0.5",
     "react": "^18.2.0",
     "react-burger-menu": "^3.0.9",
-<<<<<<< HEAD
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.7.1",
-    "react-router-dom": "^6.6.2",
-    "react-scripts": "^5.0.1",
-=======
     "react-credit-cards": "^0.8.3",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
@@ -23,7 +17,6 @@
     "react-scripts": "^1.0.7",
     "react-transition-group": "^4.4.5",
     "uuid": "^9.0.0",
->>>>>>> 1a0ac16013c1bd76a9c4c4acaafc7c09192e7ac5
     "web-vitals": "^2.1.4"
   },
   "scripts": {
