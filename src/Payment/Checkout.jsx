@@ -35,20 +35,28 @@ export default function Checkout() {
 return (
     <div className="container">
         <div className="head">
-            <h1>Your order will be ready for the</h1>
-            <p>Date & Hour</p>
+            <h2>Delivery Informations</h2> <br />
+            <div className='delivery'> 
+            Date & Hour <br /> Pick-up address
+            </div>
         </div>
+        
+            <h2>Your order </h2> <br />
+            <div className='order'> 
+                <ul>
+                    <li>Spaghetti Bolognese x 1</li>
+                    <li>Spaghetti Bolognese x 1</li>
+                    <li>Spaghetti Bolognese x 1</li>
+                    <li>Spaghetti Bolognese x 1</li>
+                    
+                </ul>
+                <br /> <hr className='total'/> <p>Total:&ensp;14$</p>
+            </div>
+        
+        <br /><hr />
         <div>
-            <h2>RECAP of your order</h2>
-            <ul>
-                <li>Spaghetti Bolognese x 1</li>
-            </ul>
-            <p>Total: 14$</p>
-        </div>
-        <hr />
-        <div>
-            <button>Edit order</button>
-            <button onClick={handleOpen}>Payment Method</button>
+            <button>Edit Order</button>
+            <button onClick={handleOpen}>Payment Method</button> <br/>
             {open ?
                 <select value={payment} onChange={handlePayment}>
                     <option value="select">Select option</option>

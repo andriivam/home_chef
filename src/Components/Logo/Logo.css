@@ -4,6 +4,8 @@
  width: 100vw;
  height: 100vh;
  background-color: #34785d;
+ display:flex;
+ justify-content: center;
 }
 
 .logo img {

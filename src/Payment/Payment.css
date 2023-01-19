@@ -1,4 +1,7 @@
 @import '../../node_modules/react-credit-cards/es/styles-compiled.css';
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 
 * {
     margin: 0;
@@ -11,13 +14,32 @@
     flex-direction: column;
     width: 100vw;
     margin: 5px 20px;
-    /* background-color: #34785D;
-   color: #fff; */
 }
 
 .head {
     margin-bottom: 20px;
 }
+
+hr{
+    width: 86%;
+}
+
+h2{
+    font-family: 'roboto slab';
+}
+.total{
+    border: 1px solid #34785D;
+    width: 100%;
+}
+
+.order , .delivery {
+    border: 3px solid #34785D;
+    border-radius: 10px;
+    padding: 10px;
+    width: 86%;
+    list-style: inside;
+}
+
 
 /* Form */
 
@@ -25,20 +47,53 @@
     float: left;
     border: none;
     color: white;
-    width: 150px;
+    width: 86%;
     height: 35px;
     background: #34785D;
     cursor: pointer;
 	align-items: center;
+    border-radius: 0.25em;
+    font-size: 18px;
+}
+button{
+    border: none;
+    color: white;
+    width: 86%;
+    height: 35px;
+    background: #34785D;
+    cursor: pointer;
+	align-items: center;
+    border-radius: 0.25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
 }
 
 input{
     font-size: 16px;
-	width: 100%;
-	margin: 8px 0;
+	width: 86%;
 	box-sizing: border-box;
 	border: none;
 	border-bottom: 2px solid #34785D;
 	color: #333;
 	font-family: 'Roboto Slab';
 }
+select {
+    width: 86%;
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-size: 1rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+  }
+
+  .rccs {
+    margin: auto 0;
+    perspective: 1000px;
+    width: 86%; }
+

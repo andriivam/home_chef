@@ -70,6 +70,7 @@ export default class PaymentForm extends React.Component {
             onChange={this.handleInputChange}
             onFocus={this.handleInputFocus}
           />
+          <br/><br/>
            <Link to='/home/user/checkout/LastPage'><input type="submit" className="pay" value="Confirm Payment" onClick={this.submitHandler}/> </Link>
           </form>
       </div>

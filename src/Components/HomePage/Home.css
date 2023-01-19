@@ -37,21 +37,25 @@ p {
   color: #000000;
   height: 9vw;
   width: 65vw;
-
+  padding: 15px;
 }
 
 .search-btn{
     color: #34785D;  
-    background: transparent;
+    background-color: white;
     border: none;
     color: #34785D;
-    font-size: 15px;
+    font-size: 18px;
     position:absolute;
     position: absolute;
     transform: translateY(-45%); 
-    left: 40vw; 
+    left: 80vw; 
     padding: 0; 
     cursor: pointer;
+    align-items: center;
+    top: 1.6rem;
+    width: 1rem;
+    height:30px;
     
 }
 

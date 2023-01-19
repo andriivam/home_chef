@@ -18,6 +18,7 @@ const Header = () => {
                 className="search-input"
                 ref={inputRef} /> 
                 <button className='search-btn' type="submit"><FaSearch /></button>
+                
             </div>
             </div>
             <hr/>
