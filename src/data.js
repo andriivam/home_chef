@@ -4,11 +4,11 @@ export const testData = [{
     [{"id":1,"cuisineType":"Italian","cuisinePhoto":"https://www.hotelmousai.com/blog/wp-content/uploads/2021/12/Top-10-Traditional-Foods-in-Italy-1140x694.jpg"
 
 },
-    {"id":2,"cuisineType":"Indian","cuisinePhoto":"https://www.hotelmousai.com/blog/wp-content/uploads/2021/12/Top-10-Traditional-Foods-in-Italy-1140x694.jpg"},
-    {"id":3,"cuisineType":"American","cuisinePhoto":"https://www.hotelmousai.com/blog/wp-content/uploads/2021/12/Top-10-Traditional-Foods-in-Italy-1140x694.jpg"},
-    {"id":4,"cuisineType":"Thai","cuisinePhoto":"https://www.hotelmousai.com/blog/wp-content/uploads/2021/12/Top-10-Traditional-Foods-in-Italy-1140x694.jpg"},
-    {"id":5,"cuisineType":"Mexican","cuisinePhoto":"https://www.hotelmousai.com/blog/wp-content/uploads/2021/12/Top-10-Traditional-Foods-in-Italy-1140x694.jpg"},
-    {"id":6,"cuisineType":"European","cuisinePhoto":"https://www.hotelmousai.com/blog/wp-content/uploads/2021/12/Top-10-Traditional-Foods-in-Italy-1140x694.jpg"}
+    {"id":2,"cuisineType":"Indian","cuisinePhoto":"https://sandinmysuitcase.com/wp-content/uploads/2021/01/Popular-Indian-Food-Dishes-735x551.jpg.webp"},
+    {"id":3,"cuisineType":"American","cuisinePhoto":"https://www.lacademie.com/wp-content/uploads/2022/01/popular-american-foods.jpg"},
+    {"id":4,"cuisineType":"Thai","cuisinePhoto":"https://images.squarespace-cdn.com/content/v1/5e18d3f50307a1644980fa7f/1630531161840-UYFCUW75ASLC98YPS34J/best+Thai+food+in+Elmhurst+Queens"},
+    {"id":5,"cuisineType":"Mexican","cuisinePhoto":"https://zukinrealtyinc.com/wp-content/uploads/2022/02/mexican-food-west-chester-zukin-realtyjpg-1024x648.jpg"},
+    {"id":6,"cuisineType":"European","cuisinePhoto":"https://woodstravel.co.uk/blog/wp-content/uploads/2015/12/400768.jpg"},
     ],
 "users":
     [
@@ -16,7 +16,11 @@ export const testData = [{
     "Login":
         {"id":1,"email":"homechef@app.com","password": "homechef"},
     "chefTable":
+<<<<<<< HEAD
         {"id":1,"aboutMe":"I am chef Mario. I like to cook Italian Food.","cuisineType": 1,"rating":4,"postCode":1000,"chefPhoto":"https://images.pexels.com/photos/6605418/pexels-photo-6605418.jpeg"},
+=======
+        {"id":1,"aboutMe":"Mario","cuisineType": 1,"rating":4,"postCode":1000,"chefPhoto":null},
+>>>>>>> 1a0ac16013c1bd76a9c4c4acaafc7c09192e7ac5
     "cuisineInter":
         {"id":1,"chefTable_id":1,"cuisineType_id":1},
     

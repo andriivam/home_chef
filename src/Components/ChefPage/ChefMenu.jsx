@@ -1,7 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import { testData } from '../../data'
-import "./ChefMenu.css"
+import "./ChefMenu.css";
+import { v4 as uuidv4 } from "uuid";
 
 
 console.log(testData[0].users)
@@ -13,27 +14,26 @@ export default function ChefMenu() {
   return (
       menu_details.map(menu_detail =>{
         return(
-          <div>
-        <div className="chefMenu">
-          <div className="menuItem1">
-          <Link className='itemlink' to="/:id/chefProfileFull/:id/Menu">
-            <img className="menuPic1"src={menu_detail.menuPhoto} alt="menu"></img>
-          
-
-              <div className="menufood1">
-                  <h5 className="menuItemName">{menu_detail.name}</h5>
-                  <p className="menuItemDes">{menu_detail.description}</p>
-                  <p className="menuItemPrice">€ {menu_detail.price}</p>
-                  <p className="menuItemDate"><b>Available for:</b> {menu_detail.date}</p>
-              </div>
+        <div>
+          <div className="chefMenu">
+            <div key={uuidv4()} className="menuItem1">
+              <Link className='itemlink' to="/:id/chefProfileFull/:id/Menu">
+                <img className="menuPic1"src={menu_detail.menuPhoto} alt="menu"></img>
               </Link>
+              <Link to="/:id/chefProfileFull/:id/Menu">
+                <img className="menuPic1"src={menu_detail.menuPhoto} alt="menu"></img>
+              </Link>
+                  <div className="menufood1">
+                      <h5 className="menuItemName">{menu_detail.name}</h5>
+                      <p className="menuItemDes">{menu_detail.description}</p>
+                      <p className="menuItemPrice">€ {menu_detail.price}</p>
+                      <p className="menuItemDate"><b>Available for:</b> {menu_detail.date}</p>
+                  </div>
             </div>
-          
+          </div>
         </div>
-    </div>
         )
       })
-    
   )
 }
 

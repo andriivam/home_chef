@@ -65,18 +65,30 @@ hr{
     .smallLogo{
         height:5rem;
     }
-  }
+    .mainSection {
+        height: auto;
+    }
+
+    footer {
+        height: 90px;
+    }
+}
+
 
 /* MainSection Style */
 .imgCategory {
     width: 25vw;
     height: 20vw;
+    
 }
 
 .mainSection {
     margin-top: 30px;
     margin: 5vw;
     padding: 2vw;
+    position: relative;
+    padding-bottom: 90px;
+    
 }
 
 .imgC {
@@ -117,7 +129,16 @@ hr{
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
+    
 }
+footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 90px;   /* Height of the footer */
+    background-color: white;
+ }
 
 .icon {
     color: #34785D;

@@ -14,7 +14,7 @@ function DishInput({ dishDescription, setDishDescription, dishImage, setDishImag
             <label>
                 Dish Description: <br />
                 <textarea className="input-field" type="text" value={dishDescription} onChange={(event) => setDishDescription(event.target.value)} />
-            </label>
+            </label><br/><br/>
         </div>
     )
 }

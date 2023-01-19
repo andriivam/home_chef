@@ -10,15 +10,22 @@ import { Link } from 'react-router-dom';
 // import { useHistory } from "react-router-dom";
 
 export default function LoginPage() {
+
   return (
-    <div className="loginpagelogo" align='center'>
+
+    <div className="loginpagelogo" align='center' >
       <Link to="/home">
         <img src={image} alt='Logo' />
       </Link>
+
       <div className='loginpageformu'>
-        <form classeName='loginpageform' >
+
+        <form className='loginpageform' align='left' color="#000000">
+
+
           <div className="Loginpageformu">
             <div className="loginlabel">
+
               <label htmlFor="email" className="loginemail" > Email  </label>
             </div>
             <div className="logininput">
@@ -36,18 +43,28 @@ export default function LoginPage() {
           <input type="Submit" name="Submit" className="submitLogin" defaultValue="Sign in" />
         </form>
       </div>
+
+
+
+
       <div className="forgotPassword">
-        <Link to="/home/LoginPage/ForgotPassword"> <p> Forgot Password? </p>
+        <Link to="/Forgotpassword"> <p> Forgot Password? </p>
         </Link>
       </div>
+
+
       <div className="Signup">
         <Link to="/home/chefForm/userForm"> <p> Sign up </p>
         </Link>
       </div>
+
+
       <div className="Becomeachef">
         <Link to="/home/ChefForm"> <p> Become a chef? </p>
         </Link>
       </div>
     </div>
+
+
   );
 };
