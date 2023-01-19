@@ -62,7 +62,8 @@ p {
 }
 
 hr{
-  background-color: #34785D
+  background-color: #34785D;
+  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -81,14 +82,14 @@ hr{
 
 /* MainSection Style */
 .imgCategory {
-    width: 25vw;
+    width: 20vw;
     height: 20vw;
     
 }
 
 .mainSection {
     margin-top: 30px;
-    margin: 5vw;
+    margin: 4vw;
     padding: 2vw;
     position: relative;
     padding-bottom: 90px;

@@ -53,7 +53,7 @@ return (
                 <br /> <hr className='total'/> <p>Total:&ensp;14$</p>
             </div>
         
-        <br /><hr />
+        <br /><hr className='lineCredit' />
         <div>
             <button>Edit Order</button>
             <button onClick={handleOpen}>Payment Method</button> <br/>

@@ -93,8 +93,6 @@ export default function UserForm() {
 						</div>
 						<div className="clr"></div>
 					</div> &nbsp;
-<<<<<<< HEAD
-=======
 
 					{/* <!---Password----> */}
 					<div className="box">
@@ -105,7 +103,6 @@ export default function UserForm() {
 						</div>
 						<div className="clr"></div>
 					</div> &nbsp;
->>>>>>> 1a0ac16013c1bd76a9c4c4acaafc7c09192e7ac5
 
 
 					{/* <!--Terms and Conditions------> */}
