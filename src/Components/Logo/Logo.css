@@ -10,8 +10,10 @@
 
 .logo img {
 
-margin-top: 50%;
+margin-top: 33%;
 width: 100vw;
 height: 100vw;
+object-fit: cover;
+
 
 }

@@ -7,7 +7,7 @@ export default function MainSection(props) {
     return(
         <div className = "mainSection">
             <div>
-                <h3 className="h3heading">Category</h3>
+                <h3 className="h3heading">Explore by category</h3>
             </div>
             <div className="categorySection">
             <Catagories/>

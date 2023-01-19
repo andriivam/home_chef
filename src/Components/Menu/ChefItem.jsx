@@ -20,17 +20,17 @@ export default function ChefItem({ id }) {
       return (
         <div className='chefMainItem'>
           <div className='h3heading'>
-            <h2>Cuisine Name</h2>
+            <h2 className="cuisineName">Cuisine Name</h2>
           </div>
           <div className='allChefList'>
             {result.map((type) => {
               return (
                 <div key={uuidv4()} className="chefItem">
                   <div className="imgDiv">
-                    <Link to={`/home/:id/ChefList/:id/chefProfileFull`}> <img className="chefImg" src={null} alt="chef" /></Link>
+                    <Link to={`/home/:id/ChefList/:id/chefProfileFull`}> <img className="chefImg" src={testData[0].cuisineType[0].cuisinePhoto} alt="chef" /></Link>
                   </div>
                   <div className="chefCard">
-                    <h3 className="chefName">{type.userTable.name}</h3>
+                    <p className="chefName">{type.userTable.name}</p>
                     <p className="cuisineDescription">{type.chefTable.aboutMe}</p>
                   </div>
                 </div>

@@ -21,13 +21,14 @@ p{
     height: 132vw;
 } */
 .chefName{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-size: 26px;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    font-size: 23px;
     text-align: left;
 }
 .chefaboutMe{
     padding-bottom: 10px;
+   
 }
 .chefRating{
     margin-bottom: 10px;
