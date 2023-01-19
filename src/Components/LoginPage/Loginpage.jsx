@@ -3,53 +3,51 @@ import React from "react";
 // import { useMediaQuery } from 'react-responsive'
 import "./Loginpage.css";
 import image from '../LoginPage/images/image.png';
-
-
-
-import {Link} from 'react-router-dom';
+// import { useForm } from "react-hook-form";
+import { Link } from 'react-router-dom';
 
 // import { Button } from 'react-bootstrap';
 // import { useHistory } from "react-router-dom";
 
-export default function Loginpage() {
+export default function LoginPage() {
   return (
-    <div className="loginpagelogo">
-    <Link to="/home" >
+    <div className="loginpagelogo" align='center'>
+      <Link to="/home">
         <img src={image} alt='Logo' />
       </Link>
-      {/* <form onSubmit={this.handleSubmit}> */}
-        {/* <label>
-          Email
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
-        </label>
-        <label>
-          Password
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
-        </label>
-        <input type="submit" value="Sign in" />
-      </form> */}
+      <div className='loginpageformu'>
+        <form classeName='loginpageform' >
+          <div className="Loginpageformu">
+            <div className="loginlabel">
+              <label htmlFor="email" className="loginemail" > Email  </label>
+            </div>
+            <div className="logininput">
+              <input type="email" required name="email" placeholder="Email" className="textBox" />
+            </div>
+            <div className="loginlabel">
+
+              <label htmlFor="password" className="loginemail" > Password </label>
+            </div>
+            <div className="logininput">
+              <input type="Password" required name="password" placeholder="Password" className="textBox" />
+            </div>
+          </div>
+
+          <input type="Submit" name="Submit" className="submitLogin" defaultValue="Sign in" />
+        </form>
+      </div>
+      <div className="forgotPassword">
+        <Link to="/home/LoginPage/ForgotPassword"> <p> Forgot Password? </p>
+        </Link>
+      </div>
+      <div className="Signup">
+        <Link to="/home/chefForm/userForm"> <p> Sign up </p>
+        </Link>
+      </div>
+      <div className="Becomeachef">
+        <Link to="/home/ChefForm"> <p> Become a chef? </p>
+        </Link>
+      </div>
     </div>
-
-    
-
   );
-}
-
-// class redirection extends Component {
-
-//     faireRedirection=()=> {
-//       let url = "maNouvelleURL"
-//       let history = useHistory()
-//       history.push(url)
-//     }
-
-//     render() {
-//       return (
-//         <div>
-//         <Button onClick={this.faireRedirection} style={{backgroundImage:"url('./images/images.png')",backgroundSize:"cover", width:"40px", height:"40px"}}>
-
-//         </Button>
-//         </div>
-//       )
-//     }
-//   }
+};

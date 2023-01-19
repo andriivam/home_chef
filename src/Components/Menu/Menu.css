@@ -1,54 +1,47 @@
 /* Style for ChefListComponent */
 .chefList {
-display: flex;
-justify-content: center; 
-margin-top: 2em;
-padding: 0;
-margin: 0;
-width: 100%;
-}
 
+    Margin: 5vw;
+    padding: 2vw;
+}
+.cuisineName{
+    font-style: 'Poppins';
+}
 /* Style for ChefItem component */
 .chefItem {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: space-between; 
+    gap: 0px 2px;
 }
-
 .imgDiv {
     width: 35vw;
     height: 20vh;
-    margin-left: 7vw;
-    margin: 2vw;
+    
+    
 }
-
 .chefImg {
     height: 100%;
     width: 100%;
-    
+    border-radius: 10px;
+    object-fit: cover;
 }
-
 .chefCard {
     display: flex;
     flex-direction: column;
     background-color: #34785D;
-    width: 35vw;
+    width: 48vw;
     height: 20vh;
-    margin-right: 7vw;
-    margin: 2vw;
+    border-radius: 10px;
 }
-
 .chefName {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-align: center;
+    font-family: 'Poppins';
+    font-size: 12px;
+    text-align: left;
 }
-
 .cuisineDescription {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-family: 'Poppins';
     text-align: center;
 }
 

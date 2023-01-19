@@ -1,5 +1,7 @@
 import './Home.css'
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom';
+
 
 function RegisterForm() {
   const [avatar, setAvatar] = useState(null);
@@ -45,9 +47,10 @@ function RegisterForm() {
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
 	  </div>
 <br />
-<button className="submit-button" type="submit">Upload your Menu</button><br/><br/>
+<Link to="/home/chefForm/chefMenu"><button className="submit-button" type="submit">Upload your Menu</button><br/><br/></Link>
 <button className="submit-button" type="submit">Submit</button>
 </form> 
+
 
 </div>
 );
