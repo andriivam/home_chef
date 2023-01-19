@@ -1,19 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
+    font-family: 'Poppins';
 
-h3{
-    font-size: 31px;
 }
-
 p {
     font-size: 19px;
+    font-family: 'Poppins';
 }
 /*header */
 /* Search Bar + small logo */
@@ -94,6 +92,7 @@ hr{
 }
 
 .imgC {
+    border-top: 10px;
     width: 40vw;
     height: 30vw;
     border-radius: 8px;
@@ -101,6 +100,8 @@ hr{
 
 .h3heading{
     margin-bottom: 15px;
+    font-style: 'Poppins';
+    font-size: 21px;
 }
 
 .categorySection {
@@ -109,6 +110,8 @@ hr{
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
+    gap: 15px 5px;
+    /* text-decoration: unset; */
 }
 
 .categoryEach{
@@ -144,4 +147,11 @@ footer {
 
 .navbar {
     list-style: none;
+}
+
+.link{
+    text-decoration: none;
+    font-weight: 400;
+    color: inherit;
+    font-family: 'Poppins' ;
 }

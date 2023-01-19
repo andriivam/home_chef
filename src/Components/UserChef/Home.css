@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
 
 * {
     margin: 0;
@@ -8,7 +10,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Alegreya SC'
+    font-family: 'Poppins'
 }
 h3{
     font-size: 31px;
@@ -18,7 +20,7 @@ h3{
 }
 p{
     font-size: 19px;
-    font-family: 'Roboto Slab';
+    font-family: 'Poppins';
 }
 
 
@@ -38,7 +40,7 @@ p{
 	border: none;
 	border-bottom: 2px solid #34785D;
 	color: #333;
-	font-family: 'Roboto Slab';
+	font-family: 'Poppins';
   }
   
   .avatar-upload-container {
@@ -121,6 +123,6 @@ textarea {
 	  padding:5px 10px;
 	  white-space: nowrap;
 	  margin: -20px;
-	  font-family: 'Alegreya SC';
+	  font-family: 'Poppins';
 	}
   

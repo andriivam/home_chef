@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap'); */
 
 * {
-    margin: 0;
+	Margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body{
-    font-family: 'Alegreya SC'
+    font-family: 'Poppins'
 }
 h3{
     font-size: 31px;
-    font-family: 'Sacramento', cursive;
+    font-family: 'Poppins', cursive;
     
 }
 p{
     font-size: 19px;
-    font-family: 'Roboto Slab';
+    font-family: 'Poppins';
 }
 
 
@@ -57,17 +57,19 @@ p{
 	width: 360px;
 	height: 30px;
 	margin-top: 10px;
-	font-family: 'Roboto Slab';
+	font-family: 'Poppinss';
 	font-size: 15px;
    
 }
 
 .textBox{
-	height: 25px;
-	width: 190px;
+	height: 4vh;
+	width: 92vw;
 	border: none;
    outline:none;
+   border-radius: 4px;
   border-bottom: 2px solid  #34785D;
+  
 }
 
 .new{

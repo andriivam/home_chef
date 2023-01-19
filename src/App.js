@@ -33,7 +33,6 @@ function App() {
           <Route path="/home/user/checkout/lastPage" element={<LastPage/>} />
         </Routes>
       </Router>
-      
     </div>
   );
 }
