@@ -30,9 +30,13 @@
 .chefaboutMe{
     padding-bottom: 15px;
 }
+<<<<<<< HEAD
 p{
     font-size: 12px;
 }
+=======
+
+>>>>>>> f4e7fc4fafe0e02302aeb4e68a7cb3a8a75847b6
 
 .chefRating{
     margin-bottom: 10px;
@@ -43,5 +47,10 @@ p{
     margin-bottom: 0px;
     padding-top: 10px;
     font-size: 25px;
+<<<<<<< HEAD
     /* font-style: 'Poppins'; */
 }
+=======
+    
+}
+>>>>>>> f4e7fc4fafe0e02302aeb4e68a7cb3a8a75847b6

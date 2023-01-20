@@ -12,59 +12,41 @@ import { Link } from 'react-router-dom';
 export default function LoginPage() {
 
   return (
-
-    <div className="loginpagelogo" align='center' >
-      <Link to="/home">
-        <img src={image} alt='Logo' />
-      </Link>
-
+      <div className="maindiv"> 
+        <Link to="/home">
+          <img src={image} alt='Logo' />
+        </Link>
       <div className='loginpageformu'>
-
         <form className='loginpageform' align='left' color="#000000">
-
-
+          {/* //table tb td tt */}
           <div className="Loginpageformu">
-            <div className="loginlabel">
-
-              <label htmlFor="email" className="loginemail" > Email  </label>
-            </div>
+            <label htmlFor="email" className="loginemail" > Email  </label>
             <div className="logininput">
               <input type="email" required name="email" placeholder="Email" className="textBox" />
             </div>
             <div className="loginlabel">
-
               <label htmlFor="password" className="loginemail" > Password </label>
             </div>
             <div className="logininput">
               <input type="Password" required name="password" placeholder="Password" className="textBox" />
             </div>
           </div>
-
           <input type="Submit" name="Submit" className="submitLogin" defaultValue="Sign in" />
         </form>
       </div>
-
-
-
-
-      <div className="forgotPassword">
+            <div className="forgotPassword">
         <Link to="/Forgotpassword"> <p> Forgot Password? </p>
         </Link>
       </div>
-
-
       <div className="Signup">
         <Link to="/home/chefForm/userForm"> <p> Sign up </p>
         </Link>
       </div>
-
-
       <div className="Becomeachef">
         <Link to="/home/ChefForm"> <p> Become a chef? </p>
         </Link>
       </div>
-    </div>
-
-
+      </div>
+   
   );
 };

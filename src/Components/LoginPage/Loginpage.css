@@ -1,12 +1,12 @@
-*{
-  margin: 0;
-  font-family:'Poppins';
-  
+
+.maindiv{
+  background-color: #34785d;
+  height: 100vh;
 }
 
 .loginpagelogo {
-  width: 100vw;
- height: 100vh;
+ width: 100vw;
+ height: auto;
  background-color: #34785d; }
 
 .loginpagelogo img {
@@ -18,32 +18,26 @@
 }
 
 .loginpageform{
-  /* width: 360px;
-	height: 30px; */
-	margin-top: 50px;
-
+  margin-top: 50px;
+  background-color: #34785d; 
 	font-family: 'Poppins';
 	font-size: 15px;
-  /* float: left;
-  width: 110px;
-  line-height: 35px;
-  padding: 0.5 vw; */
-  
+
   }
-  /* .loginpageformu{
-    /* margin-left: 20px; */
-  /* } */ 
+ 
 
   .loginemail{
     color: white;
-    /* margin-top: 20em; */
-  }
-  
+   }
+ 
+ input{
+  background-color: white;
+ } 
 .forgotPassword{
   float:left;
   margin-left: 10px;
   margin-right: 10px;
-  
+  background-color: #34785d; 
 }
 .p{
   color: white;
@@ -51,17 +45,16 @@
 }
 
 .submitLogin{
-  text-align: center;
   color: white;
   background-color: #34785d;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 50px;
+  border-radius: 0.25em;
   width: 92vw;
 	height: 5vh;
   margin: 10px 10px;
-  padding: 10px;
-
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  
 }
 .Signup{
   float: right;
@@ -83,21 +76,16 @@
 .loginlabel{
   margin-left: 10px;
   margin-right: 10px;
-width: 360px;
+  width: 360px;
 	height: 30px;
   margin-top: 10px;
-  
-
-
 }
 .logininput{
   margin-left: 10px;
   margin-right: 10px;
   width: 360px;
 	height: 30px;
-  
   margin-bottom: 10px;
-
   line-height: 35px;
   padding: 0.5 vw; 
 }
@@ -109,6 +97,7 @@ width: 360px;
   margin-left: 10px;
   margin-right: 10px;
 }
+
 
 /* 
 @media only screen and (min-width: 1224px) { 

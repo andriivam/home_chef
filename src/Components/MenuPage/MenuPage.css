@@ -1,7 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
 h4{
     margin-top: 15px;
     font-size: 25px;
@@ -15,7 +12,6 @@ h4{
     height: 70vw;
     border-radius: 9px;
     box-shadow: 1px 1px 6px 0px rgb(154, 153, 153);
-    
 }
 .menuContent p{
 
