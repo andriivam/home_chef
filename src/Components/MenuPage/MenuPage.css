@@ -14,6 +14,8 @@ h4{
     width: 86vw;
     height: 70vw;
     border-radius: 9px;
+    box-shadow: 1px 1px 6px 0px rgb(154, 153, 153);
+    
 }
 .menuContent p{
 
@@ -32,13 +34,14 @@ h4{
     border:#34785d 1px solid;
     align-content: center;
     padding: 2vw;
+    border-radius: 10px;
 }
 h5{
     font-size: 20px;
     margin-bottom: 15px;
 }
 button{
-    margin-top: 15px;
+    margin: 15px;
     border: none;
     color: white;
     width: 110px;
@@ -52,8 +55,8 @@ button{
     justify-content: center;
     display: flex;
     flex-direction: column;
-   
     align-items: center;
+    margin-left: 19px;
 }
 .quantityDiv{
     display: flex;

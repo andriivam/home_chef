@@ -4,23 +4,22 @@
     margin-right: 15px;
     border-radius: 10px;
     object-fit: cover;
+    
 }
 .menuItem1{
     display: flex;
     box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    border-color: #34785D;
+    -webkit-box-sizing: content-box;
     border: 2px solid #34785D;
+    box-shadow: 1px 1px 6px 0px rgb(154, 153, 153);
     border-radius: 10px;
-    padding:10px;
-    /* margin: 10px; */
-    Margin: 5vw;
+    margin: 5vw;
     padding: 2vw;
+    margin-top: 0;
 
 }
 .menuItemName{
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 8px;
 }
 .menuItemDes{

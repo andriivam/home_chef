@@ -1,38 +1,47 @@
 .chefProfileMainDiv{
     margin: 5vw;
     padding: 2vw;
-    
+    margin-bottom: 0%;
+    padding-bottom: 2vh;
 }
 
 .chefPic1{
     height: 25vh;
     width: 86vw;
     border-radius: 10px;
+    box-shadow: 1px 1px 6px 0px rgb(154, 153, 153);
     object-fit: cover;
-    /* padding-bottom: 15px; */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: unset;
+    /* border: 1px solid #909291; */
     
 }
 
-p{
-    font-size: 15px;
-    
-}
+
 /* .chefProfileMainDiv{
     height: 132vw;
 } */
 .chefName{
     padding-top: 2px;
-    padding-bottom: 10px;
     font-size: 23px;
     text-align: left;
 }
 .chefaboutMe{
-    padding-bottom: 10px;
-   
+    padding-bottom: 15px;
 }
+p{
+    font-size: 12px;
+}
+
 .chefRating{
     margin-bottom: 10px;
+    font-size: 12px;
+
 }
-.menuHeading{
+.menuHeading {
     margin-bottom: 0px;
+    padding-top: 10px;
+    font-size: 25px;
+    /* font-style: 'Poppins'; */
 }

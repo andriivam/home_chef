@@ -9,7 +9,7 @@ export default function ForgotPassword() {
         <div className="imgDiv">
             <div className="logoImg">
                     <Link to="/home">
-                        <img src={image} alt='Logo' />
+                        <img src={image} alt='Logo'/>
                     </Link>
                 </div>
         </div>

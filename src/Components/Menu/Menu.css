@@ -5,7 +5,7 @@
     margin-top: 2em;
     padding: 0;
     margin: 0;
-    width: 100%;
+    /* width: 100%; */
     Margin: 5vw;
     padding: 2vw;
 }
@@ -18,7 +18,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between; 
-    gap: 0px 2px;
+    gap: 0px 15px;
 }
 .imgDiv {
     width: 35vw;
@@ -31,6 +31,7 @@
     width: 100%;
     border-radius: 10px;
     object-fit: cover;
+    
 }
 .chefCard {
     display: flex;
@@ -42,7 +43,7 @@
 }
 .chefName {
     font-family: 'Poppins';
-    font-size: 12px;
+    font-size: 10px;
     text-align: left;
 }
 .cuisineDescription {
