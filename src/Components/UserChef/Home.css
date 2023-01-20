@@ -4,26 +4,6 @@
 
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: 'Poppins'
-}
-h3{
-    font-size: 31px;
-    font-family: 'Sacramento', cursive;
-	margin: 20px
-    
-}
-p{
-    font-size: 19px;
-    font-family: 'Poppins';
-}
-
-
 /* CHEF FORM */
 
 .form-container {
