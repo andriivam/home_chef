@@ -11,6 +11,7 @@ h4{
     width: 86vw;
     height: 70vw;
     border-radius: 9px;
+    box-shadow: 1px 1px 6px 0px rgb(154, 153, 153);
 }
 .menuContent p{
 
