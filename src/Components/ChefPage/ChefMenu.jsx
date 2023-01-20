@@ -20,10 +20,7 @@ export default function ChefMenu() {
               <Link className='itemlink' to="/:id/chefProfileFull/:id/Menu">
                 <img className="menuPic1"src={menu_detail.menuPhoto} alt="menu"></img>
               </Link>
-              <Link to="/:id/chefProfileFull/:id/Menu">
-                <img className="menuPic1"src={menu_detail.menuPhoto} alt="menu"></img>
-              </Link>
-                  <div className="menufood1">
+              <div className="menufood1">
                       <h5 className="menuItemName">{menu_detail.name}</h5>
                       <p className="menuItemDes">{menu_detail.description}</p>
                       <p className="menuItemPrice">€ {menu_detail.price}</p>
