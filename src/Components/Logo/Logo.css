@@ -48,9 +48,9 @@ p {
 -webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 position: absolute;
-margin-top: 10rem;
+margin-top: 9rem;
 color:white;
-font-size: 14px;
+font-size: 12px;
 font-family: "Alegreya SC";
 letter-spacing:0.2em;
 }
