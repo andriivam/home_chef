@@ -16,11 +16,7 @@ export const testData = [{
     "Login":
         {"id":1,"email":"homechef@app.com","password": "homechef"},
     "chefTable":
-<<<<<<< HEAD
-        {"id":1,"aboutMe":"I am chef Mario. I like to cook Italian Food.","cuisineType": 1,"rating":4,"postCode":1000,"chefPhoto":"https://images.pexels.com/photos/6605418/pexels-photo-6605418.jpeg"},
-=======
         {"id":1,"aboutMe":"Mario","cuisineType": 1,"rating":4,"postCode":1000,"chefPhoto":null},
->>>>>>> 1a0ac16013c1bd76a9c4c4acaafc7c09192e7ac5
     "cuisineInter":
         {"id":1,"chefTable_id":1,"cuisineType_id":1},
     
