@@ -4,7 +4,6 @@
     margin-right: 15px;
     border-radius: 10px;
     object-fit: cover;
-    
 }
 .menuItem1{
     display: flex;
@@ -16,7 +15,6 @@
     margin: 5vw;
     padding: 2vw;
     margin-top: 0;
-
 }
 .menuItemName{
     font-size: 15px;
@@ -34,7 +32,6 @@
    color: #34785D;
    margin-bottom: 8px;
 }
-
 .itemlink{
     text-decoration: none;
     color: inherit;
