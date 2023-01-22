@@ -1,6 +1,6 @@
 import React from 'react';
 import Cards from 'react-credit-cards';
-import { Link } from 'react-router-dom';
+
  
 export default class PaymentForm extends React.Component {
   state = {
@@ -22,13 +22,8 @@ export default class PaymentForm extends React.Component {
   }
   submitHandler = (event) => {
     event.preventDefault();
+    window.location.href = '/home/user/checkout/lastPage';
 
-   
-
-    // Add logic to send form data to the server or perform other actions
-   
-
-    console.log('form submitted');
 }
 
   render() {
@@ -71,7 +66,9 @@ export default class PaymentForm extends React.Component {
             onFocus={this.handleInputFocus}
           />
           <br/><br/>
-           <Link to='/home/user/checkout/LastPage'><input type="submit" className="pay" value="Confirm Payment" onClick={this.submitHandler}/> </Link>
+           
+            <input type="submit" className="pay" value="Confirm Payment" onClick={this.submitHandler}/>
+          
           </form>
       </div>
     );

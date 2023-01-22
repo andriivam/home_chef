@@ -15,8 +15,8 @@ export default function LastPage() {
         <img src={image} alt='Logo' />
       </Link>
       <div className="lastpage" background-color="#34785d">
-      <h2 className="lastpagethanks" align="center"  font-family='Roboto Slab'>Thanks to ordering</h2>
-      <Link to="/home" className="lastpageback" align="center" color="#FFFFFF" font-family='Roboto Slab'>
+      <h2 className="lastpagethanks" align="center"  fontFamily='poppins'>Thanks to ordering</h2>
+      <Link to="/home" className="lastpageback" align="center" color="#FFFFFF" fontFamily='poppins'>
         Back to the Homepage
       </Link>
       

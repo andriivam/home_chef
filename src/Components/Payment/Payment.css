@@ -38,6 +38,7 @@ h2{
     padding: 10px;
     width: 86%;
     list-style: inside;
+    font-family: poppins;
 }
 
 
@@ -54,6 +55,7 @@ h2{
 	align-items: center;
     border-radius: 0.25em;
     font-size: 18px;
+    font-family: poppins;
     
 }
 button{
