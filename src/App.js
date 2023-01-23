@@ -11,6 +11,7 @@ import UserForm from './Components/UserForm/UserForm';
 import ChefProfileFull from './Components/ChefPage/ChefProfileFull';
 import LastPage from './Components/LastPageOrdering/LastPage';
 import Checkout from './Components/Payment/Checkout';
+import ForgotPassword from './Components/LoginPage/ForgotPassword';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/home" element={<HomePage/>} />
           <Route path="/home/:id/ChefList" element={<ChefList />} />
           <Route path="/home/LoginPage" element={<LoginPage/>}/>
+          <Route path="/home/LoginPage/ForgotPassword" element={<ForgotPassword/>}/>
           <Route path="/home/chefForm" element={<ChefForm/>}/>
           <Route path="/home/chefForm/chefMenu" element={<ChefMenu/>}/>
           <Route path="/home/chefForm/userForm" element={<UserForm/>}/>

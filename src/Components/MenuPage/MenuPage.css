@@ -11,6 +11,8 @@ h4{
     width: 86vw;
     height: 70vw;
     border-radius: 9px;
+    border: 1px solid rgb(212, 210, 210);
+    padding: 2px;
     box-shadow: 1px 1px 6px 0px rgb(154, 153, 153);
 }
 .menuContent p{
@@ -44,6 +46,8 @@ button{
     height: 35px;
     background: #34785D;
     width: 86vw;
+    margin:  22px 0px 20px 20px;
+    box-shadow: 2px 2px 6px 2px rgb(154, 153, 153);
 }
 
 /* Add to cart css */

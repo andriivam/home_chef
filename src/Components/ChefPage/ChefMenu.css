@@ -2,6 +2,7 @@
     height: 18vh;
     width: 32vw;
     margin-right: 15px;
+    margin-bottom: 10px;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -9,11 +10,11 @@
     display: flex;
     box-sizing: border-box;
     -webkit-box-sizing: content-box;
-    border: 2px solid #34785D;
+    border: 1px solid #34785D;
     box-shadow: 1px 1px 6px 0px rgb(154, 153, 153);
     border-radius: 10px;
     margin: 5vw;
-    padding: 2vw;
+    padding: 4vw;
     margin-top: 0;
 }
 .menuItemName{
@@ -36,4 +37,12 @@
     text-decoration: none;
     color: inherit;
     font-style: 'Poppins';
+}
+.menuTop{
+    display: flex;
+
+}
+.menuItemNameDiv{
+    align-items: left;
+    
 }

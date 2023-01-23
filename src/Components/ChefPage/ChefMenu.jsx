@@ -18,12 +18,20 @@ export default function ChefMenu() {
           <div className="chefMenu">
             <div key={uuidv4()} className="menuItem1">
               <Link className='itemlink' to="/:id/chefProfileFull/:id/Menu">
-                <img className="menuPic1"src={menu_detail.menuPhoto} alt="menu"></img>
-                  <div className="menufood1">
-                      <p className="menuItemName">{menu_detail.name}</p>
-                      <p className="menuItemDes">{menu_detail.description}</p>
-                      <p className="menuItemPrice">€ {menu_detail.price}</p>
+                <div className="menuTop">
+                  <img className="menuPic1"src={menu_detail.menuPhoto} alt="menu"></img>
+                  <div className='menuItemNameDiv' >
+                    <p className="menuItemName">{menu_detail.name}</p>
+                    <p className="menuItemPrice">€ {menu_detail.price}</p>
                       <p className="menuItemDate"><b>Available for:</b> {menu_detail.date}</p>
+                  </div>
+                  
+                </div>
+                
+                  <div className="menufood1">
+                     
+                      <p className="menuItemDes">{menu_detail.description}</p>
+                     
                   </div>
               </Link>   
             </div>

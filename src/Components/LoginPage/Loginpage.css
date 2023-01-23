@@ -1,115 +1,57 @@
 
-.maindiv{
-  background-color: #34785d;
+.mainDivLoginPage{
+  /* margin: 5vw; */
+  padding: 4vw;
+  width: 100vw;
   height: 100vh;
+  background-color: #34785d;
 }
 
-.loginpagelogo {
- width: 100vw;
- height: auto;
- background-color: #34785d; }
-
-.loginpagelogo img {
-  margin-top: 20%;
-  margin-bottom: 5em;
-  width: 50vw;
-  height: 50vw;
+.logoimg{
+  width: 92vw;
+  height: 45vh;
   object-fit: cover;
 }
 
-.loginpageform{
-  margin-top: 50px;
-  background-color: #34785d; 
-	font-family: 'Poppins';
-	font-size: 15px;
-
-  }
- 
-
-  .loginemail{
-    color: white;
-   }
- 
- input{
-  background-color: white;
- } 
-.forgotPassword{
-  float:left;
-  margin-left: 10px;
-  margin-right: 10px;
-  background-color: #34785d; 
-}
-.p{
-  color: white;
-
+.loginForm{
+  font-family: 'Poppins';
 }
 
-.submitLogin{
-  color: white;
-  background-color: #34785d;
-  border-radius: 0.25em;
-  width: 92vw;
-	height: 5vh;
-  margin: 10px 10px;
+.containerForm{
+  margin: 6px 5px;
+}
+
+.loginButton{
   border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  
+  align-items: center;
+  width: 70vw;
+  margin: 17px 25px 17px 26px;
+  box-shadow: 2px 2px 6px 0px rgb(65 66 66);
 }
-.Signup{
-  float: right;
-  color: white;
-  background-color: #34785d;
-  border: none;
-  margin-bottom: 50px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.Becomeachef{
-  margin-left: 65px;
-  margin-right: 10px;
-  float: right;
-  color: white;
-  background-color: #34785d;
-  border: none;
-}
-.loginlabel{
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 360px;
-	height: 30px;
+
+.phuName {
+  font-family: 'Poppins';
+  width: 88vw;
+  padding-inline-start: 9px;
+  font-size: 15px;
   margin-top: 10px;
-}
-.logininput{
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 360px;
-	height: 30px;
-  margin-bottom: 10px;
-  line-height: 35px;
-  padding: 0.5 vw; 
-}
-.forgotPassword{
-  float: left;
-  color: white;
-  background-color: #34785d;
-  border: none;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
 }
 
+.phPwd{
+  font-family: 'Poppins';
+  border-radius: 8px;
+  align-items: left;
+  width: 88vw;
+  padding-inline-start: 9px;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
 
-/* 
-@media only screen and (min-width: 1224px) { 
-   
-    .logoButton{size:300px;
-
-    
-   } }
-
-@media only screen and (max-width: 600px) {
-  .logoButton {
-    height: 10px;
-    border: red solid 2px;
-  }
-} */
+.containerFoot{
+  display: flex;
+  justify-content: space-between;
+}

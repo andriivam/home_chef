@@ -1,52 +1,38 @@
 
 import React from "react";
-// import { useMediaQuery } from 'react-responsive'
-import "./Loginpage.css";
-import image from '../LoginPage/images/image.png';
-// import { useForm } from "react-hook-form";
+import "./LoginPage.css";
+import image from "./images/image.png";
 import { Link } from 'react-router-dom';
-
+import Logo from "../Logo/Logo"
 // import { Button } from 'react-bootstrap';
 // import { useHistory } from "react-router-dom";
 
-export default function LoginPage() {
-
+export default function Loginpage() {
   return (
-      <div className="maindiv"> 
-        <Link to="/home">
-          <img src={image} alt='Logo' />
-        </Link>
-      <div className='loginpageformu'>
-        <form className='loginpageform' align='left' color="#000000">
-          {/* //table tb td tt */}
-          <div className="Loginpageformu">
-            <label htmlFor="email" className="loginemail" > Email  </label>
-            <div className="logininput">
-              <input type="email" required name="email" placeholder="Email" className="textBox" />
-            </div>
-            <div className="loginlabel">
-              <label htmlFor="password" className="loginemail" > Password </label>
-            </div>
-            <div className="logininput">
-              <input type="Password" required name="password" placeholder="Password" className="textBox" />
-            </div>
-          </div>
-          <input type="Submit" name="Submit" className="submitLogin" defaultValue="Sign in" />
-        </form>
-      </div>
-            <div className="forgotPassword">
-        <Link to="/Forgotpassword"> <p> Forgot Password? </p>
-        </Link>
-      </div>
-      <div className="Signup">
-        <Link to="/home/chefForm/userForm"> <p> Sign up </p>
-        </Link>
-      </div>
-      <div className="Becomeachef">
-        <Link to="/home/ChefForm"> <p> Become a chef? </p>
-        </Link>
-      </div>
-      </div>
-   
-  );
-};
+    <div className = 'mainDivLoginPage'>
+        <div className="logoImageDiv">
+           <Link to="/home">
+              <img className='logoimg'  src={image} alt='Logo' />
+           </Link>
+         </div>
+        <form className= "loginForm">
+              <div class="containerForm">
+                <label for="uname">Email</label>
+                <input className="phuName" type="text" placeholder="Enter Email" name="uname" required/>
+
+                <label for="psw">Password</label>
+                <input className="phPwd" type="password" placeholder="Enter Password" name="psw" required/>
+
+                <button className="loginButton" type="submit">Login</button>
+              </div>
+              <div class="containerFoot" >
+                <span class="psw">Forgot password 
+                
+                </span>
+                <span class="signUp">Sign Up</span>
+                <span class="beAChef">Become a Chef</span>
+              </div>
+          </form>
+    </div>
+  )
+}
