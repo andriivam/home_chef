@@ -1,4 +1,4 @@
-@import '../../node_modules/react-credit-cards/es/styles-compiled.css';
+@import '../../../node_modules/react-credit-cards/es/styles-compiled.css';
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
@@ -20,7 +20,7 @@
     margin-bottom: 20px;
 }
 
-hr{
+.lineCredit{
     width: 86%;
 }
 
@@ -33,11 +33,15 @@ h2{
 }
 
 .order , .delivery {
-    border: 3px solid #34785D;
+    
     border-radius: 10px;
     padding: 10px;
     width: 86%;
     list-style: inside;
+    font-family: poppins;
+    border: 2px solid #34785D;
+    box-shadow: 1px 1px 6px 0px rgb(154, 153, 153);
+    border-radius: 10px;
 }
 
 
@@ -54,6 +58,7 @@ h2{
 	align-items: center;
     border-radius: 0.25em;
     font-size: 18px;
+    font-family: poppins;
     
 }
 button{

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Payment.css';
 import SendOrder from './SendOrder';
-
+import { Link } from 'react-router-dom';
 import PaymentForm from './CreditCard';
 
 export default function Checkout() {
@@ -53,9 +53,10 @@ return (
                 <br /> <hr className='total'/> <p>Total:&ensp;14$</p>
             </div>
         
-        <br /><hr />
+        <br /><hr className='lineCredit' />
         <div>
-            <button>Edit Order</button>
+        
+        <Link to='/:id/chefProfileFull/:id/Menu'><button>Edit Order</button></Link><br/>
             <button onClick={handleOpen}>Payment Method</button> <br/>
             {open ?
                 <select value={payment} onChange={handlePayment}>

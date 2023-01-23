@@ -11,11 +11,8 @@ import ChefForm from './Components/UserChef/ChefForm';
 import ChefMenu from './Components/UserChef/ChefMenu';
 import UserForm from './Components/UserForm/UserForm';
 import ChefProfileFull from './Components/ChefPage/ChefProfileFull';
-// import LastPage from './Components/LastPageOrdering/LastPage';
-import Checkout from './Payment/Checkout';
-// import { fetchFn } from './Components/api/test';
-
-
+import LastPage from './Components/LastPageOrdering/LastPage';
+import Checkout from './Components/Payment/Checkout';
 
 function App() {
 

@@ -1,6 +1,7 @@
 import React ,{useState}from 'react'
 import './MenuPage.css'
 import { testData } from '../../data'
+import { Link } from 'react-router-dom'
 
 const menuTable = testData[0].users[0].menuDetails[0]
 
@@ -31,7 +32,7 @@ export default function MenuContent() {
         </div>
         <div className='addToCart'>
             { quantity === 0? (
-            <button onClick={incrementFn}>Add to Cart</button>
+            <button className="addToCarte" onClick={incrementFn}>Add to Cart</button>
             ):
             <div  className='addedToCart'>
                     <span className='quantityDiv'>
@@ -40,9 +41,9 @@ export default function MenuContent() {
                         <span className='quantityButton'>{quantity}</span> 
                         </div>
                         <button className='smallButton'onClick={incrementFn}>+</button>
-                    </span>
-                    <span>Added to cart</span>
-                {/* </button> */}
+                    </span><br/>
+                    
+                    <Link to="/home/user/checkout"> <button className='confirmOrder'>Confirm order</button></Link>
             </div>
 
             }

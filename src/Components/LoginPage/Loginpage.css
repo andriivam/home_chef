@@ -1,126 +1,67 @@
 *{
   margin: 0;
-  font-family:'Poppins';
-  
-}
-
-.loginpagelogo {
-  width: 100vw;
- height: 100vh;
- background-color: #34785d; }
-
-.loginpagelogo img {
-  margin-top: 20%;
-  margin-bottom: 5em;
-  width: 50vw;
-  height: 50vw;
-  object-fit: cover;
-}
-
-.loginpageform{
-  /* width: 360px;
-	height: 30px; */
-	margin-top: 50px;
-
-	font-family: 'Poppins';
-	font-size: 15px;
-  /* float: left;
-  width: 110px;
-  line-height: 35px;
-  padding: 0.5 vw; */
-  
-  }
-  /* .loginpageformu{
-    /* margin-left: 20px; */
-  /* } */ 
-
-  .loginemail{
-    color: white;
-    /* margin-top: 20em; */
-  }
-  
-.forgotPassword{
-  float:left;
-  margin-left: 10px;
-  margin-right: 10px;
-  
-}
-.p{
-  color: white;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins';
 
 }
-
-.submitLogin{
-  text-align: center;
-  color: white;
+.maindivision {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: #34785d;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 50px;
-  width: 92vw;
-	height: 5vh;
-  margin: 10px 10px;
-  padding: 10px;
-
+  height: 100vh;
 }
-.Signup{
-  float: right;
+
+.logoLogin {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  margin-bottom: 2em;
+}
+
+input.textBox{
+  border-bottom: 1px solid #fdfffe;
+}
+.logininput {
+  background-color: white;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 100%;
+  margin-bottom: 1em;
+  
+}
+
+.p,.loginemail {
+  color: white;
+}
+
+.submitLoginButton {
+  margin-top: 15px;
+  border: 1px solid black;
+  color: white;
+  width: 100%;
+  height: 35px;
+  background: #34785D;
+  font-family: 'poppins';
+  letter-spacing: 2px;
+}
+.loginpageBottom {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1em;
+}
+
+.Signup, .forgotPassword, .Becomeachef {
   color: white;
   background-color: #34785d;
   border: none;
-  margin-bottom: 50px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.Becomeachef{
-  margin-left: 65px;
-  margin-right: 10px;
-  float: right;
-  color: white;
-  background-color: #34785d;
-  border: none;
-}
-.loginlabel{
-  margin-left: 10px;
-  margin-right: 10px;
-width: 360px;
-	height: 30px;
+  font-size: smaller;
   margin-top: 10px;
-  
-
-
-}
-.logininput{
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 360px;
-	height: 30px;
-  
-  margin-bottom: 10px;
-
-  line-height: 35px;
-  padding: 0.5 vw; 
-}
-.forgotPassword{
-  float: left;
-  color: white;
-  background-color: #34785d;
-  border: none;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-/* 
-@media only screen and (min-width: 1224px) { 
-   
-    .logoButton{size:300px;
-
-    
-   } }
-
-@media only screen and (max-width: 600px) {
-  .logoButton {
-    height: 10px;
-    border: red solid 2px;
   }
-} */
+
+
+
+
