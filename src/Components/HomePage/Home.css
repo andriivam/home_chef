@@ -36,7 +36,7 @@
     padding: 0; 
     cursor: pointer;
     align-items: center;
-    top: 1.6rem;
+    top: 2.6rem;
     width: 1.3rem;
     height:30px;
     
@@ -78,7 +78,7 @@ hr{
     padding: 2vw;
     position: relative;
     padding-bottom: 90px;
-    
+    min-height: 100vh;
 }
 
 .imgC {
@@ -86,6 +86,7 @@ hr{
     width: 40vw;
     height: 30vw;
     border-radius: 8px;
+    box-shadow: 1px 1px 6px 0px rgb(154, 153, 153);
 }
 
 .h3heading{

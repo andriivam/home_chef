@@ -2,16 +2,11 @@
 .chefList {
     display: flex;
     justify-content: center; 
-    margin-top: 2em;
-    padding: 0;
-    margin: 0;
-    /* width: 100%; */
-    Margin: 5vw;
-    padding: 2vw;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    
 }
-.cuisineName{
-    font-style: 'Poppins';
-}
+
 /* Style for ChefItem component */
 .chefItem {
     display: flex;
@@ -26,34 +21,59 @@
     
     
 }
+.chefMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+}
 .chefImg {
     height: 100%;
     width: 100%;
     border-radius: 10px;
-    object-fit: cover;
+    object-fit: contain;
 }
 .chefCard {
     display: flex;
     flex-direction: column;
-    background-color: #34785D;
+    border: 2px solid #34785D;
     width: 48vw;
     height: 20vh;
     border-radius: 10px;
+    padding:10px;
+    box-shadow: 1px 1px 6px 0px rgb(154, 153, 153);
+    
+    
 }
 .chefName {
     font-family: 'Poppins';
-    font-size: 12px;
     text-align: left;
 }
 .cuisineDescription {
     font-family: 'Poppins';
     text-align: center;
+    font-size: 13px;
+}
+.cuisineType{
+    font-size: 16px;
+    align-self: flex-start;
+    margin-top: 0.5em;
+}
+.cuisine-type-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 /* Back button style */
 
 .iconBack {
-    color: #000000;
-    background-color: green;
+    display: inline-block;
+    width: 1.8em;
+    height: 1.8em;
+    color: #ffffff;
+    background-color: #34785D;
     border-radius: 50%;
+    padding: 0.5em;
 }

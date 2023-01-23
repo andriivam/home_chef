@@ -5,15 +5,27 @@
 
 
 /* CHEF FORM */
-
+*{
+	margin: auto;
+	padding: auto;
+	font-family: 'Poppins';
+	
+}
+.userTitleu{
+	font-size: 30px;
+	font-weight: 600;
+	padding:  0.6em;
+	color: #ffffff;
+}
 .form-container {
-	background-color: white;
+	background-color: #34785D;
 	padding: 20px;
+	
   }
   
   .input-field {
 	font-size: 16px;
-	width: 100%;
+	width: 86%;
 	padding: 12px 20px;
 	margin: 8px 0;
 	box-sizing: border-box;
@@ -27,8 +39,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 200px;
-	height: 200px;
+	width: 180px;
+	height: 180px;
 	margin: 0 auto;
 	background-color: #eee;
 	border-radius: 50%;
@@ -48,18 +60,18 @@
   .avatar-upload-container .upload-text {
 	font-size: 20px;
 	color: #34785D;
+	text-align: center;
   }
   
   .submit-button {
-	float: left;
-    border: none;
+	border: none;
     color: white;
-    width: 110px;
+    border: 2px solid #000000;
+    width: 86%;
     height: 35px;
     background: #34785D;
     text-transform: uppercase;
     cursor: pointer;
-	font-family: 'Alegreya SC';
 	align-items: center;
   }
   
@@ -68,7 +80,7 @@
     color: #34785D;
 }
 .dish-container input{
-	width: 100%;
+	width: 86%;
 }
 
 textarea {
@@ -83,7 +95,8 @@ textarea {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
-	width: 100%;
+	width: 86%;
+	background-color: #34785D;
 }
 
 .input-field[type="file"]::-webkit-file-upload-button {
@@ -92,7 +105,7 @@ textarea {
 
 .chooseFile[type="file"]::before {
 	  content: "Choose a file";
-	  border: none;
+	  border: 2px solid #000000;
 	  color: white;
 	  width: 110px;
 	  height: 35px;
@@ -106,3 +119,12 @@ textarea {
 	  font-family: 'Poppins';
 	}
   
+	textarea.input-field{
+		width: 100%;
+		height: 100px;
+		border: 1px solid #000000;
+	}
+	
+	textarea.center-text{
+		width: 86%;
+	}

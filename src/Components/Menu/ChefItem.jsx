@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 import {Link} from 'react-router-dom';
 import { testData } from '../../data';
 import './Menu.css';
-
+import { MdArrowBack } from 'react-icons/md';
 
 export default function ChefItem({ id }) {
   console.log(`/home/${id}/ChefList/`, 'link with id');
@@ -20,18 +20,23 @@ export default function ChefItem({ id }) {
       return (
         <div className='chefMainItem'>
           <div className='h3heading'>
-            <h2 className="cuisineName">Cuisine Name</h2>
+            <h3 className="cuisineName">Cuisine Type</h3> 
+            <div className="cuisine-type-container">
+            <Link to="/home"><MdArrowBack className="iconBack" /></Link>
+            <h5 className="cuisineType">{testData[0].cuisineType[0].cuisineType}</h5>
+            </div>
+            {/* NEED TO CHANGE THE CUISINE type WITH THE CORRESPONDING ID FROM THE PREVIOUS PAGE */}
           </div>
           <div className='allChefList'>
             {result.map((type) => {
               return (
                 <div key={uuidv4()} className="chefItem">
                   <div className="imgDiv">
-                    <Link to={`/home/:id/ChefList/:id/chefProfileFull`}> <img className="chefImg" src={testData[0].cuisineType[0].cuisinePhoto} alt="chef" /></Link>
+                    <Link to={`/home/:id/ChefList/:id/chefProfileFull`}> <img className="chefImg" src={testData[0].users[0].chefTable.chefPhoto} alt="chef" /></Link>
                   </div>
                   <div className="chefCard">
-                    <p className="chefName">{type.userTable.name}</p>
-                    <p className="cuisineDescription">{type.chefTable.aboutMe}</p>
+                    <p className="chefName"> <u> {type.userTable.name} </u></p>
+                    <p className="cuisineDescription">{testData[0].users[2].chefTable.aboutMe}</p>
                   </div>
                 </div>
               )

@@ -12,9 +12,9 @@ import { Link } from 'react-router-dom';
 export default function LoginPage() {
 
   return (
-      <div className="maindiv"> 
+      <div className="maindivision"> 
         <Link to="/home">
-          <img src={image} alt='Logo' />
+          <img className="logoLogin" src={image} alt='Logo' />
         </Link>
       <div className='loginpageformu'>
         <form className='loginpageform' align='left' color="#000000">
@@ -31,22 +31,24 @@ export default function LoginPage() {
               <input type="Password" required name="password" placeholder="Password" className="textBox" />
             </div>
           </div>
-          <input type="Submit" name="Submit" className="submitLogin" defaultValue="Sign in" />
+          <input type="Submit" name="Submit" className="submitLoginButton" defaultValue="Sign in" />
         </form>
       </div>
-            <div className="forgotPassword">
-        <Link to="/Forgotpassword"> <p> Forgot Password? </p>
-        </Link>
-      </div>
       <div className="Signup">
-        <Link to="/home/chefForm/userForm"> <p> Sign up </p>
+        <Link to="/home/chefForm/userForm">  Sign up 
         </Link>
       </div>
+      <div className="forgotPassword">
+        <Link to="/Forgotpassword">  Forgot Password? 
+        </Link>
+      </div>
+            
       <div className="Becomeachef">
-        <Link to="/home/ChefForm"> <p> Become a chef? </p>
+        <Link to="/home/ChefForm">  Become a chef? 
         </Link>
       </div>
       </div>
+      
    
   );
 };
