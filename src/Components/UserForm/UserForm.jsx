@@ -1,25 +1,27 @@
 import React from 'react'
 import './Home.css'
-import { FaHome, FaPhoneAlt, FaEnvelope, FaUserAlt } from 'react-icons/fa';
-import { MdPassword } from 'react-icons/md';
+
 
 
 export default function UserForm() {
 
+	
+
+
+
 	return (
 		<div className='background'>
-			<h3>User registration</h3>
+			<h3 className='userTitle'>User registration</h3>
 			{/* <!-- Body of Form starts --> */}
 			<div className="container">
 				<form method="post" autoComplete="on">
 					{/* <!--First name--> */}
 					<div className="box">
 						<label htmlFor="firstName" className="fl fontLabel"> First Name: </label>
-						<div className="new iconBox"><FaUserAlt />
-						</div>
+						
 						<div className="fr">
-							<input type="text" name="firstName" placeholder="First Name"
-								className="textBox" autoFocus="on" required />
+							<input type="text" name="firstName" 
+								className="textBoxe" autoFocus="on" required />
 						</div>
 						<div className="clr"></div>
 					</div>
@@ -28,10 +30,10 @@ export default function UserForm() {
 					{/* <!--Second name--> */}
 					<div className="box">
 						<label htmlFor="secondName" className="fl fontLabel"> Second Name: </label>
-						<div className="fl iconBox"><FaUserAlt /></div>
+						
 						<div className="fr">
 							<input type="text" required name="secondName"
-								placeholder="Last Name" className="textBox" />
+								 className="textBoxe" />
 						</div>
 						<div className="clr"></div>
 					</div>
@@ -40,10 +42,10 @@ export default function UserForm() {
 					{/* <!--address--> */}
 					<div className="box">
 						<label htmlFor="Address" className="fl fontLabel"> Address: </label>
-						<div className="fl iconBox"><FaHome /></div>
+						
 						<div className="fr">
 							<input type="text" required name="address"
-								placeholder="Last Name" className="textBox" />
+								 className="textBoxe" />
 						</div>
 						<div className="clr"></div>
 					</div>
@@ -51,22 +53,22 @@ export default function UserForm() {
 					{/* <!--city + zip--> */}
 					<div className="box">
 						<label htmlFor="zip" className="fl fontLabel"> Zip Code & City: </label>
-						<div className="fl iconBox"><FaHome /></div>
+						
 						<div className="fr">
 							<input type="text" required name="secondName"
-								placeholder="Zip Code & City" className="textBox" />
+								 className="textBoxe" />
 						</div>
 						<div className="clr"></div>
 					</div>
-					{/* <!--Second name--> */}
+					{/* <!--city + zip--> */}
 
 
 					{/* <!---Phone No.------> */}
 					<div className="box">
 						<label htmlFor="phone" className="fl fontLabel"> Phone No.: </label>
-						<div className="fl iconBox"><FaPhoneAlt /></div>
+						
 						<div className="fr">
-							<input type="text" required name="phoneNo" maxLength="10" placeholder="Phone No." className="textBox" />
+							<input type="text" required name="phoneNo" maxLength="10" className="textBoxe" />
 						</div>
 						<div className="clr"></div>
 					</div>
@@ -76,9 +78,9 @@ export default function UserForm() {
 					{/* <!---Email ID----> */}
 					<div className="box">
 						<label htmlFor="email" className="fl fontLabel"> Email : </label>
-						<div className="fl iconBox"><FaEnvelope /></div>
+						
 						<div className="fr">
-							<input type="email" required name="email" placeholder="Email" className="textBox" />
+							<input type="email" required name="email"  className="textBoxe" />
 						</div>
 						<div className="clr"></div>
 					</div>
@@ -87,28 +89,29 @@ export default function UserForm() {
 					{/* <!---Password----> */}
 					<div className="box">
 						<label htmlFor="password" className="fl fontLabel"> Password </label>
-						<div className="fl iconBox"><MdPassword /></div>
+						
 						<div className="fr">
-							<input type="Password" required name="password" placeholder="Password" className="textBox" />
+							<input type="Password" required name="password" id="password" className="textBoxe" />
 						</div>
 						<div className="clr"></div>
-					</div> &nbsp;
+					</div> 
 
 					{/* <!---Password----> */}
 					<div className="box">
-						<label htmlFor="password" className="fl fontLabel"> Confirm Password </label>
-						<div className="fl iconBox"><MdPassword /></div>
+						<label htmlFor="password" className="fl fontLabel"> Confirm Password:</label>
+						
 						<div className="fr">
-							<input type="Password" required name="password" placeholder="Password" className="textBox" />
+							<input type="Password" required name="password"  className="textBoxe" id="password_confirm" oninput="check" />
 						</div>
 						<div className="clr"></div>
 					</div> &nbsp;
 
 
 					{/* <!--Terms and Conditions------> */}
-					<div className="box terms">
-						<input type="checkbox" name="Terms" required /> &nbsp; I accept the terms and conditions
-					</div>  &nbsp;
+					<div class="boxContainer">
+  <input className='checkbox' type="checkbox" name="Terms" required />
+  <div class="boxTerms">I accept the terms and conditions</div>
+</div>&nbsp;
 					{/* <!--Terms and Conditions------> */}
 
 
@@ -118,7 +121,7 @@ export default function UserForm() {
 						<input type="Submit" name="Submit" className="submit" defaultValue="submit" />
 					</div>
 					{/* <!---Submit Button-----> */}
-				</form>&nbsp;&nbsp;
+				</form>
 			</div>
 
 		</div>

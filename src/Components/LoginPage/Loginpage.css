@@ -21,13 +21,16 @@
   margin-bottom: 2em;
 }
 
-
+input.textBox{
+  border-bottom: 1px solid #fdfffe;
+}
 .logininput {
   background-color: white;
   border-radius: 5px;
   font-size: 1em;
   width: 100%;
   margin-bottom: 1em;
+  
 }
 
 .p,.loginemail {
@@ -51,23 +54,14 @@
   margin-top: 1em;
 }
 
-.Signup, .forgotPassword {
+.Signup, .forgotPassword, .Becomeachef {
   color: white;
   background-color: #34785d;
   border: none;
   font-size: smaller;
-  margin-left: 1em;
-  width: 100%;
-}
+  margin-top: 10px;
+  }
 
-.Becomeachef {
-  color: white;
-  background-color: #34785d;
-  border: none;
-  font-size: smaller;
-  
-  
-  
-}
+
 
 

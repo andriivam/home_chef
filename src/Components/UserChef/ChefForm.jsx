@@ -20,9 +20,9 @@ function RegisterForm() {
   };
 
   return (
-	<div> 
+	<div className='background'> 
 		<hr/>
-	<h3> Become A Chef</h3>
+	<h3 className='userTitle'> Become A Chef</h3>
 	<form className="form-container" onSubmit={handleSubmit}>
       <div className="avatar-upload-container">
         <input id="avatar-input" className="input-field" type="file" onChange={handleAvatarUpload} accept="image/*" />
@@ -33,7 +33,7 @@ function RegisterForm() {
             <div className="upload-text">Upload your avatar</div>
           </label>
         )}
-      </div>
+      </div><br/>
       <label>
        Your Chef Name:
         <input className="input-field" type="text" value={name} onChange={(event) => setName(event.target.value)} />
@@ -41,7 +41,7 @@ function RegisterForm() {
       <br />
 	  <label>
     Description:
-    <textarea className="input-field center-text" value={description} onChange={(event) => setDescription(event.target.value)} />
+    <textarea className="input-field center-text " value={description} onChange={(event) => setDescription(event.target.value)} />
 	</label>
       <br />
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>

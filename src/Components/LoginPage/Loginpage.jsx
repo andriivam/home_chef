@@ -34,16 +34,15 @@ export default function LoginPage() {
           <input type="Submit" name="Submit" className="submitLoginButton" defaultValue="Sign in" />
         </form>
       </div>
-      <div className="loginpageBottom">
-            <div className="forgotPassword">
-        <Link to="/Forgotpassword">  Forgot Password? 
-        </Link>
-      </div>
       <div className="Signup">
         <Link to="/home/chefForm/userForm">  Sign up 
         </Link>
       </div>
+      <div className="forgotPassword">
+        <Link to="/Forgotpassword">  Forgot Password? 
+        </Link>
       </div>
+            
       <div className="Becomeachef">
         <Link to="/home/ChefForm">  Become a chef? 
         </Link>

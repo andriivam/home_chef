@@ -29,9 +29,13 @@ function ChefMenu() {
     const addDish = () => {
         setDishes([...dishes, { dishDescription: '', dishImage: null }]);
     }
+
+ 
+      
+
     return (
-        <div>
-            <h3> Become A Chef</h3>
+        <div className='background'>
+            <h3 className='userTitleu'> Become A Chef</h3>
             <form className="form-container" onSubmit={handleSubmit}>
                 {dishes.map((dish, index) => (
                     <DishInput key={index} dishDescription={dish.dishDescription} setDishDescription={(value) => {
