@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom';
 import { testData } from '../../data'
 import "./ChefMenu.css";
 import { v4 as uuidv4 } from "uuid";
+import Footer from '../HomePage/Footer';
+
 
 
 console.log(testData[0].users)
@@ -11,10 +13,11 @@ const menu_details = testData[0].users[0].menuDetails
     // console.log(menu_detail)
 export default function ChefMenu() {
 
-  return (
+  return ( 
       menu_details.map(menu_detail =>{
         return(
         <div>
+          
           <div className="chefMenu">
             <div key={uuidv4()} className="menuItem1">
               <Link className='itemlink' to="/:id/chefProfileFull/:id/Menu">
@@ -36,6 +39,7 @@ export default function ChefMenu() {
               </Link>   
             </div>
           </div>
+          <Footer />
         </div>
         )
       })

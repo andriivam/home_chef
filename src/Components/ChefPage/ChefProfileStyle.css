@@ -6,29 +6,24 @@
 }
 
 .chefPic1{
-    height: 25vh;
-    width: 86vw;
+    height: 50%;
+    width: 45%;
+    float:right;
     border-radius: 10px;
-    box-shadow: 1px 1px 6px 0px rgb(154, 153, 153);
-    object-fit: cover;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: unset;
-    /* border: 1px solid #909291; */
-    
+    object-fit: contain;
 }
 
-
-/* .chefProfileMainDiv{
-    height: 132vw;
-} */
 .chefName{
     padding-top: 2px;
     font-size: 23px;
     text-align: left;
 }
-.chefaboutMe{
-    padding-bottom: 15px;
+.chefAboutMe{
+    
+    
+    border-radius: 10px;
+    
+   
 }
 
 .chefRating{

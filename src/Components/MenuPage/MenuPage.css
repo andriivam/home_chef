@@ -15,9 +15,7 @@ h4{
     padding: 2px;
     box-shadow: 1px 1px 6px 0px rgb(154, 153, 153);
 }
-.menuContent p{
 
-}
 .price{
     color: #34785d;
     font-weight: bold;
@@ -42,7 +40,20 @@ button{
     margin: 15px;
     border: none;
     color: white;
-    width: 110px;
+    width: 100%;
+    height: 35px;
+    background: #34785D;
+    
+}
+.addToCart{
+    margin-top: 15px; 
+    
+}
+.confirmOrder{
+    margin-top: 15px ;
+    border: none;
+    color: white;
+    width: 110%;
     height: 35px;
     background: #34785D;
     width: 86vw;

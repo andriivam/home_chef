@@ -18,7 +18,7 @@ export const testData = [{
     "Login":
         {"id":1,"email":"homechef@app.com","password": "homechef"},
     "chefTable":
-        {"id":1,"aboutMe":"Mario","cuisineType": 1,"rating":4,"postCode":1000,"chefPhoto":"https://images.pexels.com/photos/6605418/pexels-photo-6605418.jpeg"},
+        {"id":1,"aboutMe":"Mario","cuisineType": 1,"rating":4,"postCode":1000,"chefPhoto":"https://pbs.twimg.com/media/EZyMG1aXkAAmrh-?format=png&name=900x900"},
     "cuisineInter":
         {"id":1,"chefTable_id":1,"cuisineType_id":1},
     
@@ -27,7 +27,7 @@ export const testData = [{
     "userOrders":
         [{"id":1,"menuDetails_id":1,"date":"2023-01-09","rating":4.1,"totalPrice":24,"userTable_id":1}],
     "userTable":
-        {"id":1,"name":"Mario","pre_nom":"Antonio","address":"123 Becentral","postCode":1000,"phone":323232323,"chefTable_id":1,"login_id":1,"userOrders_id":1}
+        {"id":1,"name":"Mario","pre_nom":"Antonio","address":"123 Becentral","postCode":"1000 Brussels" ,"phone":323232323,"chefTable_id":1,"login_id":1,"userOrders_id":1}
         
 
     },
@@ -43,7 +43,7 @@ export const testData = [{
         "userOrders":
             [{"id":2,"menuDetails_id":1,"date":"2023-01-09","rating":4.1,"totalPrice":24,"userTable_id":1}],
         "userTable":
-            {"id":2,"name":"Mario Indian","pre-nom":"Mario","address":"123 Becentral","postCode":1000,"phone":323232323,"chefTable_id":1,"login_id":1,"userOrders_id":1}
+            {"id":2,"name":"Mario","pre-nom":"Mario","address":"123 Becentral","postCode":1000,"phone":323232323,"chefTable_id":1,"login_id":1,"userOrders_id":1}
 
         },
         {
