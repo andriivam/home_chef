@@ -14,10 +14,9 @@ export default function Catagories() {
     const getCuisineType = async () => {
 
         try {
-            const response = await fetch('http://localhost:3001/home')
+            const response = await fetch('http://localhost:3001/home');
             const responseData = await response.json();
-            setCuisineData(responseData)
-
+            setCuisineData(responseData);
         } catch (err) {
             console.error(err.message)
         }
@@ -25,7 +24,7 @@ export default function Catagories() {
 
     useEffect(() => {
         getCuisineType()
-    }, [])
+    }, []);
 
 
     return (
