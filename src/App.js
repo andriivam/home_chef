@@ -9,7 +9,7 @@ import ChefForm from './Components/UserChef/ChefForm';
 import ChefMenu from './Components/UserChef/ChefMenu';
 import UserForm from './Components/UserForm/UserForm';
 import ChefProfileFull from './Components/ChefPage/ChefProfileFull';
-import LastPage from './Components/LastPageOrdering/LastPage';
+import Lastpage from './Components/LastPageOrdering/Lastpage';
 import Checkout from './Components/Payment/Checkout';
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
           <Route path="/home/:id/ChefList/:id/chefProfileFull" element={<ChefProfileFull />} />
           <Route path="/:id/chefProfileFull/:id/Menu" element={<Menu/>}/>
           <Route path="/home/user/checkout" element={<Checkout/>}/>
-          <Route path="/home/user/checkout/lastPage" element={<LastPage/>} />
+          <Route path="/home/user/checkout/lastPage" element={<Lastpage/>} />
         </Routes>
       </Router>
     </div>
