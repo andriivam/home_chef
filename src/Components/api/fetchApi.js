@@ -13,7 +13,7 @@ const fetchMenuFn = async () =>{
   try {
     const body = {}
     const response = fetch('http://localhost:3001/menu',{
-      method: "POST",
+      method: "GET",
       header:{"Content-Type":"application/json"},
       body: JSON.stringify(body)
     })

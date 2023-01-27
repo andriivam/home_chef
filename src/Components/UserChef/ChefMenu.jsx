@@ -5,6 +5,15 @@ function DishInput({ dishDescription, setDishDescription, dishImage, setDishImag
     const handleDishImageUpload = (event) => {
         setDishImage(event.target.files[0]);
     };
+    
+    // "id": "1",
+    // "description": "The secret to getting uber tender meatballs is bread; yes, bread. And the secret to getting uber flavorful meatballs is in the combination of meats - I am talking about lean ground beef with sweet Italian sausage.",
+    // "name": "Spaghetti and Meatballs",
+    // "date": "2023-01-08T23:00:00.000Z",
+    // "price": 14.5,
+    // "userOrder_rating": 4.5,
+    // "chefTable_id": "1",
+    // "menuPhoto": "https://www.pressurecookrecipes.com/wp-content/uploads/2022/06/instant-pot-spaghetti-and-meatballs.jpg"
     return (
         <div className="dish-container">
             <label>

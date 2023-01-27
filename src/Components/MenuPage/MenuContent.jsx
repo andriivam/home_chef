@@ -1,4 +1,4 @@
-import React ,{useState}from 'react'
+import React ,{useState, useEffect}from 'react'
 import './MenuPage.css'
 import { testData } from '../../data'
 import { Link } from 'react-router-dom'
@@ -10,6 +10,20 @@ const qnty = 0
 
 
 export default function MenuContent() {
+    const getMenu = async () => {
+        try {
+            const response = await fetch("http://localhost:3001/menu")
+            const jsonData = await response.json()
+            console.log(jsonData,"data from backend")
+        } catch (err) {
+            console.error(err.message)
+        }
+    }
+    
+    useEffect(()=>{
+        getMenu()
+    })
+
     const[quantity,setQuantity] = useState(qnty)
     const decrementFn=() =>{
         setQuantity(prevQuantity=> prevQuantity-1)
