@@ -2,7 +2,7 @@ import React from 'react'
 import { testData } from '../../data'
 import './ChefProfileStyle.css'
 import { v4 as uuidv4 } from "uuid";
-import Header from '../HomePage/Header';
+// import Header from '../HomePage/Header';
 
 
 // const cuisineData = testData[0].cuisineType
@@ -13,7 +13,7 @@ export default function ChefProfile() {
 
     return(
         <div> 
-            <Header />
+            {/* <Header />? */}
         
         <div key={uuidv4()} className="chefProfileMainDiv">
             <div>

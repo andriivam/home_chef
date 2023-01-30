@@ -17,7 +17,6 @@ export default function ChefMenu() {
       menu_details.map(menu_detail =>{
         return(
         <div>
-          
           <div className="chefMenu">
             <div key={uuidv4()} className="menuItem1">
               <Link className='itemlink' to="/:id/chefProfileFull/:id/Menu">
@@ -28,7 +27,6 @@ export default function ChefMenu() {
                     <p className="menuItemPrice">€ {menu_detail.price}</p>
                       <p className="menuItemDate"><b>Available for:</b> {menu_detail.date}</p>
                   </div>
-                  
                 </div>
                 
                   <div className="menufood1">

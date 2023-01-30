@@ -8,7 +8,6 @@ const cuisineData = testData[0].cuisineType
 
 export default function Catagories () {
     let url = useLocation();
-    
     return(
         cuisineData.map(type =>{
             return (
