@@ -4,11 +4,6 @@ import './Home.css'
 
 
 export default function UserForm() {
-
-	
-
-
-
 	return (
 		<div className='background'>
 			<h3 className='userTitle'>User registration</h3>
@@ -101,16 +96,16 @@ export default function UserForm() {
 						<label htmlFor="password" className="fl fontLabel"> Confirm Password:</label>
 						
 						<div className="fr">
-							<input type="Password" required name="password"  className="textBoxe" id="password_confirm" oninput="check" />
+							<input type="Password" required name="password"  className="textBoxe" id="password_confirm" onInput="check" />
 						</div>
 						<div className="clr"></div>
 					</div> &nbsp;
 
 
 					{/* <!--Terms and Conditions------> */}
-					<div class="boxContainer">
+					<div className="boxContainer">
   <input className='checkbox' type="checkbox" name="Terms" required />
-  <div class="boxTerms">I accept the terms and conditions</div>
+  <div className="boxTerms">I accept the terms and conditions</div>
 </div>&nbsp;
 					{/* <!--Terms and Conditions------> */}
 
