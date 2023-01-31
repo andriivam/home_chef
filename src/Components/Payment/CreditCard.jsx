@@ -66,7 +66,6 @@ export default class PaymentForm extends React.Component {
             onFocus={this.handleInputFocus}
           />
           <br/><br/>
-           
             <input type="submit" className="pay" value="Confirm Payment" onClick={this.submitHandler}/>
           
           </form>
