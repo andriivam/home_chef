@@ -4,7 +4,7 @@ import HomePage from './Components/HomePage/HomePage';
 import ChefList from './Components/Menu/ChefList';
 import Logo from './Components/Logo/Logo';
 import Menu from './Components/MenuPage/Menu';
-import LoginPage from "./Components/LoginPage/Loginpage";
+import LoginPage from "./Components/LoginPage/LoginPage";
 import ChefForm from './Components/UserChef/ChefForm';
 import ChefMenu from './Components/UserChef/ChefMenu';
 import UserForm from './Components/UserForm/UserForm';
