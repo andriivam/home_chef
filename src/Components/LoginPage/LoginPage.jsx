@@ -1,7 +1,7 @@
 
 import React from "react";
 // import { useMediaQuery } from 'react-responsive'
-import "./LoginPage.css";
+import "./Loginpage.css";
 import image from '../LoginPage/images/image.png';
 // import { useForm } from "react-hook-form";
 import { Link } from 'react-router-dom';
