@@ -64,15 +64,16 @@ const handleCuisineType = (event) => {
         <input className="input-field" type="email"   {...register("email")}/>
       </label><br />
       <label htmlFor="cuisineTypes">Select Cuisine Type:</label>
-      <select id="cuisine-select" {...register("cuisineType")}>
+      <select id="cuisineType" {...register("cuisineType")}>
         <option value=""> Select Cuisine Type </option>
         <option value="1">Italian</option>
-        <option value="Indian">Indian</option>
-        <option value="American">American</option>
-        <option value="Thai">Thai</option>
-        <option value="French">Mexican</option>
-        <option value="French">Mexican</option>
-        <option value="French">Mexican</option>
+        <option value="2">Indian</option>
+        <option value="3">American</option>
+        <option value="4">Thai</option>
+        <option value="5">Mexican</option>
+        <option value="6">European</option>
+        <option value="7">French</option>
+        <option value="8">Vegan</option>
       </select>
       <br />
       <label>
