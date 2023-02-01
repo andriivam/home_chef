@@ -25,8 +25,7 @@ const handleCuisineType = (event) => {
 
   return (
 	<div className='background'> 
-		<hr/>
-	<h3 className='userTitle'> Become A Chef</h3>
+	<h3 className='userTitleu'> Become A Chef</h3>
 	<form className="form-container" method='post' id='addAmenuForm' onSubmit={handleSubmit}>
       <div className="avatar-upload-container">
         <input id="avatar-input" className="input-field" type="file" onChange={handleAvatarUpload} accept="image/*" />

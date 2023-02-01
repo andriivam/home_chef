@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-
-
 /* CHEF FORM */
 *{
 	
@@ -11,20 +9,14 @@
 	
 }
 
-.background{
-	height: 100vh;
-	
-}
+
 .userTitleu{
-	font-size: 30px;
-	font-weight: 600;
-	padding:  0.6em;
+	padding: 0.6rem;
 	color: #ffffff;
 }
 .form-container {
 	background-color: #34785D;
 	padding: 20px;
-	
   }
   
   .input-field {
@@ -34,7 +26,17 @@
 	font-family: 'Poppins';
 	border-radius: 5px;
 	padding-left: 5px;
-	   
+	
+  }
+
+  .input-fields {
+	font-size: 16px;
+	width: 100%;
+	color: #333;
+	font-family: 'Poppins';
+	border-radius: 5px;
+	padding-left: 5px;
+	
   }
   label{
 	margin-top: 5px;
@@ -47,10 +49,10 @@
 	justify-content: center;
 	width: 180px;
 	height: 180px;
-	margin: 0 auto;
 	background-color: #eee;
 	border-radius: 50%;
 	overflow: hidden;
+	margin: 0 auto;
   }
   
   .avatar-upload-container input[type='file'] {
@@ -86,17 +88,13 @@
     cursor: pointer;
     color: #34785D;
 }
-.dish-container input{
-	width: 86%;
-}
 
 textarea {
     resize: none;
-	border-radius: 5px;
-	padding-left: 5px;
+	
 }
-  hr{
-	background-color: #34785D
+.separate{
+	width: 100%;
   }  
 
   .dish-container {
@@ -107,32 +105,30 @@ textarea {
 	background-color: #34785D;
 }
 
-.input-field[type="file"]::-webkit-file-upload-button {
+.inputs-fields[type="file"]::-webkit-file-upload-button {
 	visibility: hidden;
   }
 
 .chooseFile[type="file"]::before {
-	  content: "Choose a file";
+	  content: "Add Image";
+	  padding: 0 10px;
+	  border-radius: 5px;
 	  border: 1px solid #000000;
 	  color: white;
-	  width: 110px;
-	  height: 35px;
+	  align-items: center;
 	  background: #34785D;
 	  text-transform: uppercase;
 	  cursor: pointer;
 	  text-align: center;
-	  padding:5px 10px;
-	  white-space: nowrap;
-	  margin: -20px;
 	  font-family: 'Poppins';
+	  box-shadow: 2px 2px 6px 0px rgb(65 66 66);
 	}
+	
   
 	textarea.input-field{
-		width: 100%;
+		width: 86%;
 		height: 100px;
 		border: 1px solid #000000;
 	}
 	
-	textarea.center-text{
-		width: 86%;
-	}
+	
