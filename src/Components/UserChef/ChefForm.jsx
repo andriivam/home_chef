@@ -1,29 +1,32 @@
 import './Home.css'
 import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
-
-
+import { useForm } from "react-hook-form";
+ 
 function RegisterForm() {
   const [avatar, setAvatar] = useState(null);
-  const [name, setName] = useState('');
-  const [description, setDescription] = useState('');
-  
-
+  const [cuisineType, setCuisineType] = useState('select');
   const handleAvatarUpload = (event) => {
     setAvatar(event.target.files[0]);
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // handle form submission here
-	console.log(avatar);
-  };
+const handleCuisineType = (event) => {
+    setCuisineType(event.target.value);
+    console.log(event.target.value, 'cuisineType');
+}
+
+  const {
+    register,
+    handleSubmit,
+    // formState: { errors }
+} = useForm();
+
+
 
   return (
 	<div className='background'> 
-		<hr/>
-	<h3 className='userTitle'> Become A Chef</h3>
-	<form className="form-container" onSubmit={handleSubmit}>
+	<h3 className='userTitleu'> Become A Chef</h3>
+	<form className="form-container" method='post' id='addAmenuForm' onSubmit={handleSubmit}>
       <div className="avatar-upload-container">
         <input id="avatar-input" className="input-field" type="file" onChange={handleAvatarUpload} accept="image/*" />
         {avatar ? (
@@ -36,13 +39,58 @@ function RegisterForm() {
       </div><br/>
       <label>
        Your Chef Name:
-        <input className="input-field" type="text" value={name} onChange={(event) => setName(event.target.value)} />
-      </label>
+       <input type='text' className="input-field"  {...register("chefName")}/>
+      </label><br />
+      <label>
+        First Name:
+       <input type='text' className="input-field"  {...register("firstName")}/>
+      </label>  <br />  
+      <label>
+       Second Name:
+        <input className="input-field" type="text"  {...register("secondName")}/>
+      </label><br />
+      
+	     <label>
+       About you:  
+         <textarea className="input-field center-text "   {...register("aboutMe")}/>  
+	    </label><br />
+      <label>
+       Phone:<br />
+        <input className="input-field" type="text"   {...register("phone")}/>
+      </label><br />
+      <label>
+       Email:<br />
+        <input className="input-field" type="email"   {...register("email")}/>
+      </label><br />
+      <label htmlFor="cuisineTypes">Select Cuisine Type:</label>
+      <select id="cuisineType" {...register("cuisineType")}>
+        <option value=""> Select Cuisine Type </option>
+        <option value="1">Italian</option>
+        <option value="2">Indian</option>
+        <option value="3">American</option>
+        <option value="4">Thai</option>
+        <option value="5">Mexican</option>
+        <option value="6">European</option>
+        <option value="7">French</option>
+        <option value="8">Vegan</option>
+      </select>
       <br />
-	  <label>
-    Description:
-    <textarea className="input-field center-text " value={description} onChange={(event) => setDescription(event.target.value)} />
-	</label>
+      <label>
+      Zip Code:
+        <input className="input-field" type="text"   {...register("postCode")}/>
+      </label><br />
+      <label>
+       Address:
+        <input className="input-field" type="text"   {...register("address")}/>
+      </label><br />
+      <label>
+       Password:
+        <input className="input-field" type="password"  {...register("password")}/>
+      </label><br />
+      <label>
+       Confirm Password:
+        <input className="input-field" type="password"  {...register("password")}/>
+      </label>
       <br />
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
 	  </div>

@@ -5,14 +5,15 @@ import HomePage from './Components/HomePage/HomePage';
 import ChefList from './Components/Menu/ChefList';
 import Logo from './Components/Logo/Logo';
 import Menu from './Components/MenuPage/Menu';
-import Loginpage from './Components/LoginPage/Loginpage';
+import LoginPage from "./Components/LoginPage/LoginPage";
 import ChefForm from './Components/UserChef/ChefForm';
 import ChefMenu from './Components/UserChef/ChefMenu';
 import UserForm from './Components/UserForm/UserForm';
 import ChefProfileFull from './Components/ChefPage/ChefProfileFull';
 import Lastpage from './Components/LastPageOrdering/Lastpage';
 import Checkout from './Components/Payment/Checkout';
-import {AddAMenu} from './Components/api/AddAMenu';
+import ForgotPassword from './Components/LoginPage/ForgotPassword';
+
 
 function App() {
 
@@ -33,10 +34,11 @@ function App() {
           <Route path="/:id/chefProfileFull/:id/Menu" element={<Menu/>}/>
           <Route path="/home/user/checkout" element={<Checkout/>}/>
           <Route path="/home/user/checkout/lastPage" element={<Lastpage/>} />
+          <Route path="/home/LoginPage/ForgotPassword" element={<ForgotPassword/>}/>
         </Routes>
       </Router>
     </div>
   );
 }
-// fetchFn()
+
 export default App;

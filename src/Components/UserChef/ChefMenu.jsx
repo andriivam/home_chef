@@ -1,7 +1,7 @@
 import './Home.css'
 import React, { useState} from 'react';
 
-function DishInput({ dishDescription, setDishDescription, dishImage, setDishImage }) {
+function DishInput({ dishDescription, setDishDescription, dishImage, setDishImage, dishPrice, setDishPrice, dishDate, setDishDate, dishName, setDishName }) {
     const handleDishImageUpload = (event) => {
         setDishImage(event.target.files[0]);
     };
@@ -18,25 +18,39 @@ function DishInput({ dishDescription, setDishDescription, dishImage, setDishImag
         <div className="dish-container">
             <label>
                 Dish Image:
-                <input className="input-field hide-file-text chooseFile" type="file" onChange={handleDishImageUpload} accept="image/*" />
+                <input className="inputs-fields hide-file-text chooseFile" type="file" onChange={handleDishImageUpload} accept="image/*" />
+            </label>
+            <label>
+                Name:
+            <input className="input-fields" type="text" value={dishName} onChange={(event) => setDishName(event.target.value)} />
             </label>
             <label>
                 Dish Description: <br />
-                <textarea className="input-field" type="text" value={dishDescription} onChange={(event) => setDishDescription(event.target.value)} />
-            </label><br/><br/>
+                <textarea className="input-fields" type="text" value={dishDescription} onChange={(event) => setDishDescription(event.target.value)} />
+            </label>
+            <label>
+            Price:<br />
+            <input className="input-fields" type="text" value={dishPrice} onChange={(event) => setDishPrice(event.target.value)} />
+            </label>
+            <label>
+            Date:<br />
+            <input className="input-fields" type="date" value={dishDate} onChange={(event) => setDishDate(event.target.value)} />
+            </label>
+            <hr className="separate"/>
+            <br />
         </div>
     )
 }
 
 function ChefMenu() {
-    const [dishes, setDishes] = useState([{ dishDescription: '', dishImage: null }]);
+    const [dishes, setDishes] = useState([{ dishDescription: '', dishImage: null, dishPrice: '', dishDate: '',dishName: '' }]);
     const handleSubmit = (event) => {
         event.preventDefault();
         // handle form submission here
         console.log(dishes);
     };
     const addDish = () => {
-        setDishes([...dishes, { dishDescription: '', dishImage: null }]);
+        setDishes([...dishes, { dishDescription: '', dishImage: null, dishPrice: '', dishDate: '',dishName: '' }]);
     }
 
  
@@ -51,7 +65,20 @@ function ChefMenu() {
                         const newDishes = [...dishes];
                         newDishes[index].dishDescription = value;
                         setDishes(newDishes);
-                    }} dishImage={dish.dishImage} setDishImage={(value) => {
+                    }} dishName={dish.dishName} setDishName={(value) => {
+                        const newDishes = [...dishes];
+                        newDishes[index].dishName = value;
+                        setDishes(newDishes);
+                    }} dishPrice={dish.dishPrice} setDishPrice={(value) => {
+                        const newDishes = [...dishes];
+                        newDishes[index].dishPrice = value;
+                        setDishes(newDishes);
+                    }} dishDate={dish.dishDate} setDishDate={(value) => {
+                        const newDishes = [...dishes];
+                        newDishes[index].dishDate = value;
+                        setDishes(newDishes);
+                    }}
+                        dishImage={dish.dishImage} setDishImage={(value) => {
                         const newDishes = [...dishes];
                         newDishes[index].dishImage = value;
                         setDishes(newDishes);
