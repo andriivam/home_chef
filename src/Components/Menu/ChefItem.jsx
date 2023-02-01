@@ -6,7 +6,7 @@ import { MdArrowBack } from 'react-icons/md';
 
 export default function ChefItem({ id }) {
   const [kitchenId, setKitchenId] = useState([]);
-
+  useEffect(() => {
   const getCuisine = async () => {
     try {
       const response = await fetch(`http://localhost:3001/home/${id}/ChefList`)
@@ -18,9 +18,9 @@ export default function ChefItem({ id }) {
     }
   }
 
-  useEffect(() => {
+  
     getCuisine()
-  }, []);
+  }, [id]);
 
   console.log(kitchenId, 'kitchenId');
 
