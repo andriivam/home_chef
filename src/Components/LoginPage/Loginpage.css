@@ -50,6 +50,7 @@ input.textBox{
   background: #34785D;
   font-family: 'poppins';
   letter-spacing: 2px;
+  box-shadow: 2px 2px 6px 0px rgb(65 66 66);
 }
 .loginpageBottom {
   display: flex;

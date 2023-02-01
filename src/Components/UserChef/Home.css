@@ -6,9 +6,13 @@
 
 /* CHEF FORM */
 *{
-	margin: auto;
-	padding: auto;
+	
 	font-family: 'Poppins';
+	
+}
+
+.background{
+	height: 100vh;
 	
 }
 .userTitleu{
@@ -26,14 +30,16 @@
   .input-field {
 	font-size: 16px;
 	width: 86%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	box-sizing: border-box;
-	border: none;
-	border-bottom: 2px solid #34785D;
 	color: #333;
 	font-family: 'Poppins';
+	border-radius: 5px;
+	padding-left: 5px;
+	   
   }
+  label{
+	margin-top: 5px;
+  }
+  
   
   .avatar-upload-container {
 	display: flex;
@@ -73,6 +79,7 @@
     text-transform: uppercase;
     cursor: pointer;
 	align-items: center;
+	box-shadow: 2px 2px 6px 0px rgb(65 66 66);
   }
   
 .upload-text:hover {
@@ -85,7 +92,8 @@
 
 textarea {
     resize: none;
-
+	border-radius: 5px;
+	padding-left: 5px;
 }
   hr{
 	background-color: #34785D

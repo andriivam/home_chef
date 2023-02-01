@@ -11,6 +11,7 @@ import UserForm from './Components/UserForm/UserForm';
 import ChefProfileFull from './Components/ChefPage/ChefProfileFull';
 import Lastpage from './Components/LastPageOrdering/LastPage';
 import Checkout from './Components/Payment/Checkout';
+import ForgotPassword from './Components/LoginPage/ForgotPassword';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Route path="/:id/chefProfileFull/:id/Menu" element={<Menu/>}/>
           <Route path="/home/user/checkout" element={<Checkout/>}/>
           <Route path="/home/user/checkout/lastPage" element={<Lastpage/>} />
+          <Route path="/home/LoginPage/ForgotPassword" element={<ForgotPassword/>}/>
         </Routes>
       </Router>
     </div>
