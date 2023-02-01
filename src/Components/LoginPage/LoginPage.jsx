@@ -22,13 +22,13 @@ export default function LoginPage() {
           <div className="Loginpageformu">
             <label htmlFor="email" className="loginemail" > Email  </label>
             <div className="logininput">
-              <input type="email" required name="email" placeholder="Email" className="textBox" />
+              <input type="email" required name="email"  className="textBox" />
             </div>
             <div className="loginlabel">
               <label htmlFor="password" className="loginemail" > Password </label>
             </div>
             <div className="logininput">
-              <input type="Password" required name="password" placeholder="Password" className="textBox" />
+              <input type="Password" required name="password" className="textBox" />
             </div>
           </div>
           <input type="Submit" name="Submit" className="submitLoginButton" defaultValue="Sign in" />
@@ -39,7 +39,7 @@ export default function LoginPage() {
         </Link>
       </div>
       <div className="forgotPassword">
-        <Link to="/Forgotpassword">  Forgot Password? 
+        <Link to="/home/LoginPage/ForgotPassword">  Forgot Password? 
         </Link>
       </div>
             
