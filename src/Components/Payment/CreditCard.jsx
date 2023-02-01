@@ -1,5 +1,5 @@
 import React from 'react';
-import Cards from 'react-credit-cards';
+import Cards from 'react-credit-cards-2'
 
  
 export default class PaymentForm extends React.Component {

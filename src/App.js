@@ -1,5 +1,4 @@
 import React from 'react'
-// import cors from 'cors'
 
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './Components/HomePage/HomePage';
@@ -21,7 +20,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>    
-        <Route path='/AddAMenu' element={<AddAMenu/>}/>
+        {/* <Route path='/AddAMenu' element={<AddAMenu/>}/> */}
           <Route path="/" element={<Logo/>}/>
           <Route path="/home" element={<HomePage/>} />
           <Route path="/home/:id/ChefList" element={<ChefList />} />

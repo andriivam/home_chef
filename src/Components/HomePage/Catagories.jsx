@@ -2,7 +2,7 @@ import React ,{useEffect}from 'react'
 import './Home.css'
 import { useLocation, Link } from 'react-router-dom';
 import { v4 as uuidv4 } from "uuid";
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 
 

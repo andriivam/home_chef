@@ -2,6 +2,7 @@ import React ,{useState, useEffect}from 'react'
 import './MenuPage.css'
 import { testData } from '../../data'
 import { Link } from 'react-router-dom'
+import CurrencyFormat from '../ShoppinCartContext/CurrencyFormat'
 
 const menuTable = testData[0].users[0].menuDetails[0]
 
@@ -31,14 +32,17 @@ export default function MenuContent() {
     const incrementFn=() =>{
         setQuantity(prevQuantity=> prevQuantity+1)
     }
-
+    const getQuantity = (quantity) => {
+    }
   return (
     <div className='menuContent'>
         <img src = {menuTable.menuPhoto} alt="menuPhoto"/>
         <h4>{menuTable.name}</h4>
         <div className='miniPara'>
             <p>Chef Name</p>
-            <p className='price'>{menuTable.price}€/pp</p>
+            <p className='price'>{(menuTable.price)}€/pp</p>
+{/* either one is fine */}
+            <p className='price'>{CurrencyFormat(menuTable.price)}€/pp</p>
         </div>
         <div className='description'>
             <h5>Description</h5>
