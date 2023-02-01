@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { v4 as uuidv4 } from "uuid";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Menu.css';
 import { MdArrowBack } from 'react-icons/md';
 
 export default function ChefItem({ id }) {
   const [kitchenId, setKitchenId] = useState([]);
-
+  let url = useLocation();
   const getCuisine = async () => {
     try {
       const response = await fetch(`http://localhost:3001/home/${id}/ChefList`)
@@ -38,7 +38,7 @@ export default function ChefItem({ id }) {
           return (
             <div key={uuidv4()} className="chefItem">
               <div className="imgDiv">
-                <Link to={`/home/:id/ChefList/:id/chefProfileFull`}> <img className="chefImg" src={info.chefPhoto} alt="chef" /></Link>
+                <Link to={`${url.pathname}/${info.id}/chefProfileFull`}> <img className="chefImg" src={info.chefPhoto} alt="chef" /></Link>
               </div>
               <div className="chefCard">
                 <p className="chefName"> <u> {info.aboutMe} </u></p>
