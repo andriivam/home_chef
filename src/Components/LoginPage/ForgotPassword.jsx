@@ -5,74 +5,36 @@ import image from "./images/image.png";
 
 export default function ForgotPassword() {
   return (
-    <div className="forgotPwdPage">
-        <div className="imgDiv">
-            <div className="logoImg">
-                    <Link to="/home">
-                        <img src={image} alt='Logo' />
-                    </Link>
-                </div>
+            <div className="maindivision"> 
+        <Link to="/home">
+          <img className="logoLogin" src={image} alt='Logo' />
+        </Link>
+      <div className='loginpageformu'>
+        <form className='loginpageform' align='left' color="#000000">
+          {/* //table tb td tt */}
+          <div className="Loginpageformu">
+            <label htmlFor="email" className="loginemail" > Email  </label>
+            <div className="logininput">
+              <input type="email" required name="email"  className="textBox" />
+            </div>
+            <div className="loginlabel">
+              <label htmlFor="password" className="loginemail" > New Password </label>
+            </div>
+            <div className="logininput">
+              <input type="Password" required name="password" className="textBox" />
+            </div>
+          </div>
+          <div className="loginlabel">
+              <label htmlFor="password" className="loginemail" > Confirm New Password </label>
+            </div>
+            <div className="logininput">
+              <input type="Password" required name="password" className="textBox" />
+            </div>
+          
+          <input type="Submit" name="Submit" className="submitLoginButton" defaultValue="Login" />
+        </form>
         </div>
-        <div>
-        <form className='forgotpwdform'  color="#000000">
-             <div className="forgotPAsswordPage">
-                     <div className="enterMail">
-                         <label htmlFor="email" className="loginemail" > Enter Email  </label>
-                     </div>
-                     <div className="mailinput">
-                         <input type="email" required name="email" placeholder="Email" className="textBox" />
-                     </div>
-                     <div className="newPwd">
-                         <label htmlFor="password" className="loginemail" >New Password </label>
-                     </div>
-                     <div className="newPwdinput">
-                         <input type="Password" required name="password" placeholder="Password" className="textBox" />
-                     </div>
-                     <div className="confirmPwd">
-                         <label htmlFor="password" className="loginemail" >Confirm Password </label>
-                     </div>
-                     <div className="confirmPwdinput">
-                         <input type="Password" required name="password" placeholder="Password" className="textBox" />
-                     </div>
-                     <input type="Submit" name="Submit" className="submitLogin" defaultValue="Log in" />    
-             </div>
-         </form>
         </div>
-
-    </div>
-
-
-
-    // <div className="forgotPwdPage" align='center'color="#000000" >
-    //     <div className="logoImg">
-    //         <Link to="/home">
-    //         <img src={image} alt='Logo' />
-    //         </Link>
-    //     </div>
         
-    //     <form className='forgotpwdform'  color="#000000">
-    //         <div className="forgotPAsswordPage">
-    //                 <div className="enterMail">
-    //                     <label htmlFor="email" className="loginemail" > Enter Email  </label>
-    //                 </div>
-    //                 <div className="mailinput">
-    //                     <input type="email" required name="email" placeholder="Email" className="textBox" />
-    //                 </div>
-    //                 <div className="newPwd">
-    //                     <label htmlFor="password" className="loginemail" >New Password </label>
-    //                 </div>
-    //                 <div className="newPwdinput">
-    //                     <input type="Password" required name="password" placeholder="Password" className="textBox" />
-    //                 </div>
-    //                 <div className="confirmPwd">
-    //                     <label htmlFor="password" className="loginemail" >Confirm Password </label>
-    //                 </div>
-    //                 <div className="confirmPwdinput">
-    //                     <input type="Password" required name="password" placeholder="Password" className="textBox" />
-    //                 </div>
-    //                 <input type="Submit" name="Submit" className="submitLogin" defaultValue="Log in" />    
-    //         </div>
-    //     </form>
-    // </div>
   )
 }

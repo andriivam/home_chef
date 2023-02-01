@@ -62,7 +62,7 @@ const onSubmit = async (data) => {
         </Link>
       </div>
       <div className="forgotPassword">
-        <Link to="/Forgotpassword">  Forgot Password? 
+        <Link to="/home/LoginPage/ForgotPassword">  Forgot Password? 
         </Link>
       </div>
             
