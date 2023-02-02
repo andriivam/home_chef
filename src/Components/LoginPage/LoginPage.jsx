@@ -6,6 +6,9 @@ import image from '../LoginPage/images/image.png';
 // import { useForm } from "react-hook-form";
 import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
+// import { ErrorMessage } from '@hookform/error-message';
+import { ErrorMessage } from "@hookform/error-message";
+import { useState } from "react";
 
 // import { Button } from 'react-bootstrap';
 // import { useHistory } from "react-router-dom";
@@ -15,16 +18,18 @@ export default function LoginPage() {
   const {
     register,
     handleSubmit,
-    // formState: { errors }
+    setError,
+    formState: { errors }
 } = useForm({
     cuisineType: "",
     photo: ""
 });
+// const [errorBackend, setErrorBackend] = useState([])
 
 const onSubmit = async (data = {}) => {
     console.log(data, 'data')
     try {
-        const resp = await fetch('http://localhost:3001/home/LoginPage', {
+        const resp = await fetch('http://localhost:4000/home/LoginPage', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -32,8 +37,15 @@ const onSubmit = async (data = {}) => {
             body: JSON.stringify(data)
         });
         console.log(resp, 'response');
+        if (resp.statusCode > 200) {
+          setError('root.serverError', { 
+            type: resp.statusCode,
+          })
+        }
+        
     } catch (err) {
         console.error(err);
+        
     }
 }
 
@@ -57,6 +69,13 @@ const onSubmit = async (data = {}) => {
               <input type="Password" required name="password" className="textBox" {...register("password")}/>
             </div>
           </div>
+          <ErrorMessage errors={errors} name="singleErrorInput" />
+          {/* <p>{errors.root.serverError.type === 400 && <p>server response message</p>}</p> */}
+          <ErrorMessage
+            errors={errors}
+            name="singleErrorInput"
+            render={({ message }) => <p>{message}</p>}
+          />
           <input type="Submit" name="Submit" className="submitLoginButton" defaultValue="Sign in" />
         </form>
       </div>

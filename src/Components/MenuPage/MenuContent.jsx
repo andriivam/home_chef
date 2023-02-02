@@ -14,8 +14,8 @@ export default function MenuContent() {
     const getMenu = async () => {
         try {
             const response = await fetch("http://localhost:3001/menu")
-            const jsonData = await response.json()
-            console.log(jsonData,"data from backend")
+            const menuTable = await response.json()
+            console.log(menuTable,"data from backend")
         } catch (err) {
             console.error(err.message)
         }
@@ -26,6 +26,12 @@ export default function MenuContent() {
     })
 
     const[quantity,setQuantity] = useState(qnty)
+    const [cart, setCart] = useState([])
+
+    const handleAddToCart = (menuTable) =>{
+        setCart([...cart,menuTable.name])
+    }
+    console.log(cart)
     const decrementFn=() =>{
         setQuantity(prevQuantity=> prevQuantity-1)
     }
@@ -40,9 +46,7 @@ export default function MenuContent() {
         <h4>{menuTable.name}</h4>
         <div className='miniPara'>
             <p>Chef Name</p>
-            <p className='price'>{(menuTable.price)}€/pp</p>
-{/* either one is fine */}
-            <p className='price'>{CurrencyFormat(menuTable.price)}€/pp</p>
+            <p className='price'>{CurrencyFormat(menuTable.price)}/pp</p>
         </div>
         <div className='description'>
             <h5>Description</h5>
@@ -50,7 +54,7 @@ export default function MenuContent() {
         </div>
         <div className='addToCart'>
             { quantity === 0? (
-            <button className="addToCarte" onClick={incrementFn}>Add to Cart</button>
+            <button className="addToCarte" onClick={incrementFn} onChange = {handleAddToCart}>Add to Cart</button>
             ):
             <div  className='addedToCart'>
                     <span className='quantityDiv'>
