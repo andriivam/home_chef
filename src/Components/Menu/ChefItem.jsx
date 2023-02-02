@@ -12,8 +12,8 @@ export default function ChefItem({ id }) {
       try {
         const response = await fetch(`http://localhost:3001/home/${id}/ChefList`)
         const responseData = await response.json();
-        setKitchenId(responseData)
-
+        setKitchenId(responseData);
+console.log(responseData, 'chefItm')
       } catch (err) {
         console.error(err.message)
       }
@@ -21,12 +21,10 @@ export default function ChefItem({ id }) {
     getCuisine()
   }, [id]);
 
-  console.log(kitchenId, 'kitchenId');
-
   return (
     <div className='chefMainItem'>
       <div className='h3heading'>
-        <h3 className="cuisineName">Cuisine Type</h3>
+        <h3 className="cuisineName">CuisineType</h3>
         <div className="cuisine-type-container">
           <Link to="/home"><MdArrowBack className="iconBack" /></Link>
           <h5 className="cuisineType">{kitchenId.cuisineType}</h5>
@@ -40,7 +38,7 @@ export default function ChefItem({ id }) {
                 <Link to={`${url.pathname}/${info.id}/chefProfileFull`}> <img className="chefImg" src={info.chefPhoto} alt="chef" /></Link>
               </div>
               <div className="chefCard">
-                <p className="chefName"> <u> {info.aboutMe} </u></p>
+                <p className="chefName"> <u> {info.name} </u></p>
                 <p className="cuisineDescription">{info.cuisineType}</p>
               </div>
             </div>

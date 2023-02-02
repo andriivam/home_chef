@@ -16,10 +16,7 @@ export default function LoginPage() {
     register,
     handleSubmit,
     // formState: { errors }
-} = useForm({
-    cuisineType: "",
-    photo: ""
-});
+} = useForm();
 
 const onSubmit = async (data = {}) => {
     console.log(data, 'data')
@@ -61,7 +58,7 @@ const onSubmit = async (data = {}) => {
         </form>
       </div>
       <div className="Signup">
-        <Link to="/home/chefForm/userForm">  Sign up 
+        <Link to="/home/LoginPage/userForm">  Sign up 
         </Link>
       </div>
       <div className="forgotPassword">
@@ -70,7 +67,7 @@ const onSubmit = async (data = {}) => {
       </div>
             
       <div className="Becomeachef">
-        <Link to="/home/ChefForm">  Become a chef? 
+        <Link to="/home/LoginPage/ChefForm">  Become a chef? 
         </Link>
       </div>
       </div>
