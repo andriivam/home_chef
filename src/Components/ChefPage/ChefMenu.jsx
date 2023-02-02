@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {Link} from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import "./ChefMenu.css";
 import { v4 as uuidv4 } from "uuid";
 // import Footer from '../HomePage/Footer';
@@ -7,7 +7,7 @@ import { v4 as uuidv4 } from "uuid";
 
 export default function ChefProfile({id}) {
   const [chefMenu, setChefMenu] = useState([]);
-
+  let url = useLocation();
   useEffect(() => {
     const getCuisine = async () => {
       try {
@@ -30,7 +30,7 @@ export default function ChefProfile({id}) {
           
           <div className="chefMenu">
             <div key={uuidv4()} className="menuItem1">
-              <Link className='itemlink' to="/:id/chefProfileFull/:id/Menu">
+              <Link className='itemlink' to={`${url.pathname}/${menu_detail.id}/Menu`}>
                 <img className="menuPic1"src={menu_detail.photoUrl} alt="menu"></img>
               </Link>
                   <div className="menufood1">
