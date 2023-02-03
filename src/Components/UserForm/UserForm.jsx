@@ -42,7 +42,7 @@ export default function UserForm() {
 
 						<div className="fr">
 							<input type="text" name="firstName"
-								className="textBoxe" autoFocus="on" required {...register("firstName")}/>
+								className="textBoxe" autoFocus="on" required {...register("firstName")} />
 						</div>
 						<div className="clr"></div>
 					</div>
@@ -54,7 +54,7 @@ export default function UserForm() {
 
 						<div className="fr">
 							<input type="text" required name="secondName"
-								className="textBoxe" {...register("secondName")}/>
+								className="textBoxe" {...register("secondName")} />
 						</div>
 						<div className="clr"></div>
 					</div>
@@ -66,7 +66,7 @@ export default function UserForm() {
 
 						<div className="fr">
 							<input type="text" required name="address"
-								className="textBoxe" {...register("address")}/>
+								className="textBoxe" {...register("address")} />
 						</div>
 						<div className="clr"></div>
 					</div>
@@ -77,7 +77,7 @@ export default function UserForm() {
 
 						<div className="fr">
 							<input type="text" required name="secondName"
-								className="textBoxe" {...register("postCode")}/>
+								className="textBoxe" {...register("postCode")} />
 						</div>
 						<div className="clr"></div>
 					</div>
@@ -89,7 +89,7 @@ export default function UserForm() {
 						<label htmlFor="phone" className="fl fontLabel"> Phone No.: </label>
 
 						<div className="fr">
-							<input type="text" required name="phoneNo" maxLength="10" className="textBoxe" {...register("phone")}/>
+							<input type="text" required name="phoneNo" maxLength="10" className="textBoxe" {...register("phone")} />
 						</div>
 						<div className="clr"></div>
 					</div>
@@ -101,7 +101,7 @@ export default function UserForm() {
 						<label htmlFor="email" className="fl fontLabel"> Email : </label>
 
 						<div className="fr">
-							<input type="email" required name="email" className="textBoxe" {...register("email")}/>
+							<input type="email" required name="email" className="textBoxe" {...register("email")} />
 						</div>
 						<div className="clr"></div>
 					</div>
@@ -129,9 +129,9 @@ export default function UserForm() {
 
 
 					{/* <!--Terms and Conditions------> */}
-					<div class="boxContainer">
+					<div className="boxContainer">
 						<input className='checkbox' type="checkbox" name="Terms" required />
-						<div class="boxTerms">I accept the terms and conditions</div>
+						<div className="boxTerms">I accept the terms and conditions</div>
 					</div>&nbsp;
 					{/* <!--Terms and Conditions------> */}
 
