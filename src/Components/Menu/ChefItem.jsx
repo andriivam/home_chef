@@ -6,11 +6,24 @@ import { MdArrowBack } from 'react-icons/md';
 
 export default function ChefItem({ id }) {
   const [kitchenId, setKitchenId] = useState([]);
+  const [cuisineType, setCuisineType] = useState([]);
+
   let url = useLocation();
+  const getCuisineType = async () => {
+    try {
+      const cuisineType = await fetch(`http://localhost:3001/home/${id}/cuisineType`)
+      const cuisineData = await cuisineType.json();
+      setCuisineType(cuisineData);
+      console.log(cuisineData, 'cuisinetype')
+    } catch (err) {
+      console.error(err.message)
+    }
+  }
+
   useEffect(() => {
     const getCuisine = async () => {
       try {
-        const response = await fetch(`http://localhost:3001/home/${id}/ChefList`)
+        const response = await fetch(`http://localhost:3001/home/${id}/chefList`)
         const responseData = await response.json();
         setKitchenId(responseData);
 console.log(responseData, 'chefItm')
@@ -18,13 +31,19 @@ console.log(responseData, 'chefItm')
         console.error(err.message)
       }
     }
+    
     getCuisine()
+    getCuisineType()
+
+
   }, [id]);
 
   return (
     <div className='chefMainItem'>
       <div className='h3heading'>
-        <h3 className="cuisineName">CuisineType</h3>
+      {cuisineType.map(cuisineName=>
+        <h3 className="cuisineName">{cuisineName.cuisineType}</h3>
+      )}
         <div className="cuisine-type-container">
           <Link to="/home"><MdArrowBack className="iconBack" /></Link>
           <h5 className="cuisineType">{kitchenId.cuisineType}</h5>
@@ -39,7 +58,7 @@ console.log(responseData, 'chefItm')
               </div>
               <div className="chefCard">
                 <p className="chefName"> <u> {info.name} </u></p>
-                <p className="cuisineDescription">{info.cuisineType}</p>
+                <p className="cuisineDescription">{info.aboutMe}</p>
               </div>
             </div>
           )
