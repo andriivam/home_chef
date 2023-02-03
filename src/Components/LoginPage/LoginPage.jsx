@@ -18,13 +18,8 @@ export default function LoginPage() {
   const {
     register,
     handleSubmit,
-    setError,
-    formState: { errors }
-} = useForm({
-    cuisineType: "",
-    photo: ""
-});
-// const [errorBackend, setErrorBackend] = useState([])
+    // formState: { errors }
+} = useForm();
 
 const onSubmit = async (data = {}) => {
     console.log(data, 'data')
@@ -32,16 +27,18 @@ const onSubmit = async (data = {}) => {
         const resp = await fetch('http://localhost:4000/home/LoginPage', {
             method: "POST",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                // "Access-Control-Allow-Credentials": true,
+                // "Access-Control-Allow-Origin": "*"
             },
             body: JSON.stringify(data)
         });
         console.log(resp, 'response');
-        if (resp.statusCode > 200) {
-          setError('root.serverError', { 
-            type: resp.statusCode,
-          })
-        }
+        // if (resp.statusCode > 200) {
+        //   setError('root.serverError', { 
+        //     type: resp.statusCode,
+        //   })
+        // }
         
     } catch (err) {
         console.error(err);
@@ -69,18 +66,11 @@ const onSubmit = async (data = {}) => {
               <input type="Password" required name="password" className="textBox" {...register("password")}/>
             </div>
           </div>
-          <ErrorMessage errors={errors} name="singleErrorInput" />
-          {/* <p>{errors.root.serverError.type === 400 && <p>server response message</p>}</p> */}
-          <ErrorMessage
-            errors={errors}
-            name="singleErrorInput"
-            render={({ message }) => <p>{message}</p>}
-          />
           <input type="Submit" name="Submit" className="submitLoginButton" defaultValue="Sign in" />
         </form>
       </div>
       <div className="Signup">
-        <Link to="/home/chefForm/userForm">  Sign up 
+        <Link to="/home/LoginPage/userForm">  Sign up 
         </Link>
       </div>
       <div className="forgotPassword">
@@ -89,7 +79,7 @@ const onSubmit = async (data = {}) => {
       </div>
             
       <div className="Becomeachef">
-        <Link to="/home/ChefForm">  Become a chef? 
+        <Link to="/home/LoginPage/ChefForm">  Become a chef? 
         </Link>
       </div>
       </div>
