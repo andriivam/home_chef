@@ -15,7 +15,7 @@
     background-color: #34785D;
     color: white;
     height: 107vh;
-    width: 107vw;
+    width: 100%;
 }
 .textBoxe{
     font-size: 16px;
@@ -23,34 +23,47 @@
 	border-radius: 5px;
     padding-left: 5px;
 	color: #333;
+    margin: 6px 2px 6px 2px;
+    max-width: 50%;
 	
 }
-input.checkBox{
-   margin-right:5em;
-}
-.boxTerms{
-    font-size: 16px;
-    width: 86%;
-    padding: 5px;
-    border: 2px solid #050505;
-    text-align: center;
-    background-color: #ffffff;
-    color: #34785D;
-    
-}
+
+
 input[type="checkbox"]:checked + .boxTerms{
     background-color: #34785D;
     color: #fdfdfd;
 }
 
 .submit {
-	border: none;
-    color: white;
-    border: 2px solid #050505;
-    width: 86%;
-    height: 35px;
-    background: #34785D;
-    text-transform: uppercase;
-    cursor: pointer;
-	align-items: center;
+	margin-top: 15px;
+  /* margin: 1em; */
+  margin-left: 23vw;
+  border-radius: 10px;
+  border: 1px solid #3f3d3d;
+  color: white;
+  width: 39%;
+  height: 35px;
+  background: #34785D;
+  font-family: 'poppins';
+  letter-spacing: 2px;
+  box-shadow: 3px 2px 7px 0px rgb(76,76,76);
   }
+  .boxContainer{
+      display: flex;
+      align-items: center;
+
+  }
+  .boxContainer.input{
+   width: 20%;
+   align-items: left;
+}
+.checkboxTerms{
+    margin:0;
+    width:9%
+ }
+
+ .box-Terms{
+    font-size: 16px;
+    color: #ffffff;
+}
+ 

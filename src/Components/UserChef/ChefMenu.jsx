@@ -7,27 +7,30 @@ function DishInput({ dishDescription, setDishDescription, dishImage, setDishImag
     };
     return (
         <div className="dish-container">
+            <div className= "chefMenuImg">
+                <label>
+                   <p className="imgBoxText">Dish Image </p> 
+                    <input className="inputs-fields" type="file" onChange={handleDishImageUpload} accept="image/*" />
+                </label>
+            </div>
+            
             <label>
-                Dish Image:
-                <input className="inputs-fields hide-file-text chooseFile" type="file" onChange={handleDishImageUpload} accept="image/*" />
-            </label>
-            <label>
-                Name:
+                Name
             <input className="input-fields" type="text" value={dishName} onChange={(event) => setDishName(event.target.value)} />
             </label>
             <label>
-                Dish Description: <br />
+                Dish Description <br />
                 <textarea className="input-fields" type="text" value={dishDescription} onChange={(event) => setDishDescription(event.target.value)} />
             </label>
             <label>
-            Price:<br />
+            Price<br />
             <input className="input-fields" type="text" value={dishPrice} onChange={(event) => setDishPrice(event.target.value)} />
             </label>
             <label>
-            Date:<br />
+            Date<br />
             <input className="input-fields" type="date" value={dishDate} onChange={(event) => setDishDate(event.target.value)} />
             </label>
-            <hr className="separate"/>
+          
             <br />
         </div>
     )
@@ -49,8 +52,8 @@ function ChefMenu() {
 
     return (
         <div className='background'>
-            <h3 className='userTitleu'> Become A Chef</h3>
-            <form className="form-container" onSubmit={handleSubmit}>
+            <h3 className='userTitleu'> Add your dish</h3>
+            <form className="form-containerChefMenu" onSubmit={handleSubmit}>
                 {dishes.map((dish, index) => (
                     <DishInput key={index} dishDescription={dish.dishDescription} setDishDescription={(value) => {
                         const newDishes = [...dishes];

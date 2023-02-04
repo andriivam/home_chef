@@ -62,19 +62,22 @@ let location = useNavigate();
           <input type="Submit" name="Submit" className="submitLoginButton" defaultValue="Sign in" />
         </form>
       </div>
+      <div className="bottomDiv">
       <div className="Signup">
-        <Link to="/home/LoginPage/userForm">  Sign up
+        <Link to="/home/LoginPage/userForm">  Sign Up
         </Link>
       </div>
       <div className="forgotPassword">
-        <Link to="/home/LoginPage/ForgotPassword">  Forgot Password?
+        <Link to="/home/LoginPage/ForgotPassword">  Forgot Password
         </Link>
       </div>
 
       <div className="Becomeachef">
-        <Link to="/home/LoginPage/ChefForm">  Become a chef?
+        <Link to="/home/LoginPage/ChefForm">  Become a Chef
         </Link>
       </div>
+      </div>
+      
     </div>
 
 
