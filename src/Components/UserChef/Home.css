@@ -110,7 +110,7 @@
     height: 35px;
     background: #34785D;
     text-transform: uppercase;
-	border-radius: 10px;
+	  border-radius: 10px;
     cursor: pointer;
     align-items: center;
     margin: 11px 0px 36px 18px;
@@ -146,7 +146,7 @@ textarea {
 
   .dish-container {
     display: flex;
-	flex-direction: column;
+  	flex-direction: column;
     margin: 0;
     width: 87%;
     background-color: #34785D;
