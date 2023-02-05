@@ -1,8 +1,11 @@
 import React from 'react';
 import './Home.css';
+import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from "react-router-dom";
-
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
+import '../UserChef/Home.css'
 
 export default function UserForm() {
 	let location = useNavigate();
@@ -36,7 +39,15 @@ export default function UserForm() {
 
 	return (
 		<div className='background'>
-			<h3 className='userTitle'>User registration</h3>
+			<div className="headerTag">
+        
+				<div ><Link to="/home/LoginPage">
+				<FontAwesomeIcon className="backButton" icon={faArrowCircleLeft}></FontAwesomeIcon>
+				</Link></div>
+				<div ><h3 className='userTitle'>User registration</h3></div>
+				
+			
+			</div>
 			{/* <!-- Body of Form starts --> */}
 			<div className="container">
 				<form method="post" autoComplete="on" onSubmit={handleSubmit(onSubmit)}>

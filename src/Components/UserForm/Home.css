@@ -27,7 +27,9 @@
     
 	
 }
-
+input[type="text"]{
+    border: 1px solid #3f3d3d;
+}
 
 input[type="checkbox"]:checked + .boxTerms{
     background-color: #34785D;

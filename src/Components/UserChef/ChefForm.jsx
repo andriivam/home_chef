@@ -1,4 +1,7 @@
 import './Home.css'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useForm } from "react-hook-form";
@@ -39,7 +42,16 @@ function RegisterForm() {
 
   return (
     <div className='background'>
-      <h3 className='userTitleu'> Become A Chef</h3>
+      <div className="headerTag">
+        
+        <div ><Link to="/home/LoginPage">
+            <FontAwesomeIcon className="backButton" icon={faArrowCircleLeft}></FontAwesomeIcon>
+          </Link>
+        </div>
+       <div><h3 className='userTitleu'>  Become A Chef</h3></div> 
+        
+      </div>
+      
       <form className="form-container" method='post' id='addAmenuForm' onSubmit={handleSubmit(onSubmit)}>
         <div className="avatar-upload-container">
           <input id="avatar-input" className="input-field" type="file" onChange={handleAvatarUpload} accept="image/*"  {...register("chefPhoto")}/>

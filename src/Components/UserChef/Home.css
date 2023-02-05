@@ -11,6 +11,18 @@
 .backgroundDiv{
     width: 100%;
 }
+.backButton{
+  color: white;
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+
+}
+.headerTag{
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+}
 
 
 .userTitleu{
@@ -18,7 +30,8 @@
     padding: 0.6rem;
     color: #ffffff;
 	padding-top: 24px;
-	padding-left: 12px;
+	padding-left: 24px;
+  
 }
 .form-container {
     background-color: #34785D;

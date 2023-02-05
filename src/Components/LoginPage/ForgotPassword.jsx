@@ -3,6 +3,9 @@ import '../LoginPage/ForgotPasswordStyle.css';
 import { Link } from 'react-router-dom';
 import image from "./images/image.png";
 import { useForm } from 'react-hook-form';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
+import '../UserChef/Home.css'
 
 export default function ForgotPassword() {
 
@@ -30,6 +33,10 @@ const onSubmit = async (data = {}) => {
 
   return (
             <div className="maindivision"> 
+            <div ><Link to="/home/LoginPage">
+          <FontAwesomeIcon className="backButton" icon={faArrowCircleLeft}></FontAwesomeIcon>
+          </Link>
+        </div>
         <Link to="/home">
           <img className="logoLogin" src={image} alt='Logo' />
         </Link>
