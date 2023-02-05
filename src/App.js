@@ -16,28 +16,28 @@ import ForgotPassword from './Components/LoginPage/ForgotPassword';
 
 function App() {
 
-  return (
-    <div className="App">
-      
-      <Router>
-        <Routes>
-         
-          <Route path="/" element={<Logo/>}/>
-          <Route path="/home" element={<HomePage/>} />
-          <Route path="/home/:id/ChefList" element={<ChefList />} />
-          <Route path="/home/LoginPage" element={<LoginPage/>}/>
-          <Route path="/home/chefForm" element={<ChefForm/>}/>
-          <Route path="/home/chefForm/chefMenu" element={<ChefMenu/>}/>
-          <Route path="/home/chefForm/userForm" element={<UserForm/>}/>
-          <Route path="/home/:id/ChefList/:id/chefProfileFull" element={<ChefProfileFull />} />
-          <Route path="/:id/chefProfileFull/:id/Menu" element={<Menu/>}/>
-          <Route path="/home/user/checkout" element={<Checkout/>}/>
-          <Route path="/home/user/checkout/lastPage" element={<Lastpage/>} />
-          <Route path="/home/LoginPage/ForgotPassword" element={<ForgotPassword/>}/>
-        </Routes>
-      </Router>
-    </div>
-  );
+return (
+<div className="App">
+
+<Router>
+<Routes>
+
+<Route path="/" element={<Logo/>}/>
+<Route path="/home" element={<HomePage/>} />
+<Route path="/home/:id/ChefList" element={<ChefList />} />
+<Route path="/home/LoginPage" element={<LoginPage/>}/>
+<Route path="/home/chefForm" element={<ChefForm/>}/>
+<Route path="/home/chefForm/chefMenu" element={<ChefMenu/>}/>
+<Route path="/home/chefForm/userForm" element={<UserForm/>}/>
+<Route path="/home/:id/ChefList/:id/chefProfileFull" element={<ChefProfileFull />} />
+<Route path="/:id/chefProfileFull/:id/Menu" element={<Menu/>}/>
+<Route path="/home/user/checkout" element={<Checkout/>}/>
+<Route path="/home/user/checkout/lastPage" element={<Lastpage/>} />
+<Route path="/home/LoginPage/ForgotPassword" element={<ForgotPassword/>}/>
+</Routes>
+</Router>
+</div>
+);
 }
 
 export default App;
