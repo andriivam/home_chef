@@ -31,7 +31,7 @@ export default function Catagories() {
 
         cuisineData.map(type => {
             return (
-                <Link key={uuidv4()} to={`${url.pathname}/${type.id}/ChefList/`}>
+                <Link key={uuidv4()} to={`${url.pathname}/${type.id}/ChefList`}>
                     <div key={uuidv4()} className="categoryEach">
                         <img className="imgC" src={type.photo} alt={"dishPhoto"}></img>
                         <p className="paraC">{type.cuisineType}</p>
