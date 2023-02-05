@@ -1,5 +1,5 @@
 *{
-  margin: 0;
+  margin: 5vw;
   padding: 0;
   box-sizing: border-box;
   font-family: 'poppins';
@@ -8,7 +8,7 @@
 .maindivision {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   background-color: #34785d;
   height: 100vh;
@@ -16,9 +16,10 @@
 
 .logoLogin {
   width: 100%;
-  height: auto;
+  height: 78%;
   max-width: 300px;
-  margin-bottom: 2em;
+  margin-left: 2em;
+  object-fit: cover;
 }
 
 input.textBox{
@@ -31,26 +32,29 @@ input.textBox{
   background-color: white;
   border-radius: 5px;
   font-size: 1em;
-  width: 100%;
-  margin-bottom: 1em;  
- 
+  width: 89%;
+  margin: 1em;  
 }
 
 .p,.loginemail {
   color: white;
+  margin: 1em;
 }
 
 
 .submitLoginButton {
   margin-top: 15px;
-  border: 1px solid black;
+  margin: 1em;
+  margin-left: 28vw;
+  border-radius: 10px;
+  border: 1px solid #3f3d3d;
   color: white;
-  width: 100%;
+  width: 39%;
   height: 35px;
   background: #34785D;
   font-family: 'poppins';
   letter-spacing: 2px;
-  box-shadow: 2px 2px 6px 0px rgb(65 66 66);
+  box-shadow: 3px 2px 7px 0px rgb(76,76,76);
 }
 .loginpageBottom {
   display: flex;
@@ -64,7 +68,17 @@ input.textBox{
   background-color: #34785d;
   border: none;
   font-size: smaller;
-  margin-top: 10px;
+  margin: 10px;
+  margin-left: 10px;
+  }
+  .bottomDiv{
+    display: flex;
+    padding-left: 23px;
+    padding-right: 5px;
+  }
+  .loginpageformu{
+    margin-left: 7px;
+    margin-right: 5px;
   }
 
 

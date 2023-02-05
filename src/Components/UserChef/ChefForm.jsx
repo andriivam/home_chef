@@ -1,4 +1,7 @@
 import './Home.css'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useForm } from "react-hook-form";
@@ -39,7 +42,16 @@ function RegisterForm() {
 
   return (
     <div className='background'>
-      <h3 className='userTitleu'> Become A Chef</h3>
+      <div className="headerTag">
+        
+        <div ><Link to="/home/LoginPage">
+            <FontAwesomeIcon className="backButton" icon={faArrowCircleLeft}></FontAwesomeIcon>
+          </Link>
+        </div>
+       <div><h3 className='userTitleu'>  Become A Chef</h3></div> 
+        
+      </div>
+      
       <form className="form-container" method='post' id='addAmenuForm' onSubmit={handleSubmit(onSubmit)}>
         <div className="avatar-upload-container">
           <input id="avatar-input" className="input-field" type="file" onChange={handleAvatarUpload} accept="image/*"  {...register("chefPhoto")}/>
@@ -52,33 +64,33 @@ function RegisterForm() {
           )}
         </div><br />
         <label>
-          Your Chef Name:
+          Your Chef Name
           <input type='text' className="input-field"  {...register("chefName")} />
         </label><br />
         <label>
-          First Name:
+          First Name
           <input type='text' className="input-field"  {...register("firstName")} />
         </label>  <br />
         <label>
-          Second Name:
+          Second Name
           <input className="input-field" type="text"  {...register("secondName")} />
         </label><br />
 
         <label>
-          About you:
+          About you
           <textarea className="input-field center-text "   {...register("aboutMe")} />
         </label><br />
         <label>
-          Phone:<br />
+          Phone<br />
           <input className="input-field" type="text"   {...register("phone")} />
         </label><br />
         <label>
-          Email:<br />
+          Email<br />
           <input className="input-field" type="email"   {...register("email")} />
         </label><br />
-        <label htmlFor="cuisineTypes">Select Cuisine Type:</label>
-        <select id="cuisineType" {...register("cuisineType")}>
-          <option value=""> Select Cuisine Type </option>
+        <label htmlFor="cuisineTypes">Select Cuisine Type</label>
+        <select className="dropDowm" id="cuisineType" {...register("cuisineType")}>
+          <option value=""> Cuisine Type </option>
           <option value="1">Italian</option>
           <option value="2">Indian</option>
           <option value="3">American</option>
@@ -90,27 +102,28 @@ function RegisterForm() {
         </select>
         <br />
         <label>
-          Zip Code:
+          Zip Code
           <input className="input-field" type="text"   {...register("postCode")} />
         </label><br />
         <label>
-          Address:
+          Address
           <input className="input-field" type="text"   {...register("address")} />
         </label><br />
         <label>
-          Password:
+          Password
           <input className="input-field" type="password"  {...register("password")} />
         </label><br />
         <label>
-          Confirm Password:
+          Confirm Password
           <input className="input-field" type="password"  {...register("password")} />
         </label>
         <br />
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
         </div>
         <br />
+       
+        <button className="submitButton" type="submit">Submit</button>
         <Link to="/home/chefForm/chefMenu"><button className="submit-button" type="submit">Upload your Menu</button><br /><br /></Link>
-        <button className="submit-button" type="submit">Submit</button>
       </form>
 
 

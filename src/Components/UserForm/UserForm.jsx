@@ -1,8 +1,11 @@
 import React from 'react';
 import './Home.css';
+import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from "react-router-dom";
-
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
+import '../UserChef/Home.css'
 
 export default function UserForm() {
 	let location = useNavigate();
@@ -36,13 +39,21 @@ export default function UserForm() {
 
 	return (
 		<div className='background'>
-			<h3 className='userTitle'>User registration</h3>
+			<div className="headerTag">
+        
+				<div ><Link to="/home/LoginPage">
+				<FontAwesomeIcon className="backButton" icon={faArrowCircleLeft}></FontAwesomeIcon>
+				</Link></div>
+				<div ><h3 className='userTitle'>User registration</h3></div>
+				
+			
+			</div>
 			{/* <!-- Body of Form starts --> */}
 			<div className="container">
 				<form method="post" autoComplete="on" onSubmit={handleSubmit(onSubmit)}>
 					{/* <!--First name--> */}
 					<div className="box">
-						<label htmlFor="firstName" className="fl fontLabel"> First Name: </label>
+						<label htmlFor="firstName" className="fl fontLabel"> First Name </label>
 
 						<div className="fr">
 							<input type="text" name="firstName"
@@ -54,7 +65,7 @@ export default function UserForm() {
 
 					{/* <!--Second name--> */}
 					<div className="box">
-						<label htmlFor="secondName" className="fl fontLabel"> Second Name: </label>
+						<label htmlFor="secondName" className="fl fontLabel"> Second Name </label>
 
 						<div className="fr">
 							<input type="text" required name="secondName"
@@ -66,7 +77,7 @@ export default function UserForm() {
 
 					{/* <!--address--> */}
 					<div className="box">
-						<label htmlFor="Address" className="fl fontLabel"> Address: </label>
+						<label htmlFor="Address" className="fl fontLabel"> Address </label>
 
 						<div className="fr">
 							<input type="text" required name="address"
@@ -77,7 +88,7 @@ export default function UserForm() {
 					{/* <!--Address--> */}
 					{/* <!--city + zip--> */}
 					<div className="box">
-						<label htmlFor="zip" className="fl fontLabel"> Zip Code & City: </label>
+						<label htmlFor="zip" className="fl fontLabel"> Zip Code & City </label>
 
 						<div className="fr">
 							<input type="text" required name="secondName"
@@ -90,7 +101,7 @@ export default function UserForm() {
 
 					{/* <!---Phone No.------> */}
 					<div className="box">
-						<label htmlFor="phone" className="fl fontLabel"> Phone No.: </label>
+						<label htmlFor="phone" className="fl fontLabel"> Phone No. </label>
 
 						<div className="fr">
 							<input type="text" required name="phoneNo" maxLength="10" className="textBoxe" {...register("phone")} />
@@ -102,7 +113,7 @@ export default function UserForm() {
 
 					{/* <!---Email ID----> */}
 					<div className="box">
-						<label htmlFor="email" className="fl fontLabel"> Email : </label>
+						<label htmlFor="email" className="fl fontLabel"> Email </label>
 
 						<div className="fr">
 							<input type="email" required name="email" className="textBoxe" {...register("email")} />
@@ -123,7 +134,7 @@ export default function UserForm() {
 
 					{/* <!---Password----> */}
 					<div className="box">
-						<label htmlFor="password" className="fl fontLabel"> Confirm Password:</label>
+						<label htmlFor="password" className="fl fontLabel"> Confirm Password</label>
 
 						<div className="fr">
 							<input type="Password" required name="password" className="textBoxe" id="password_confirm" input="check" />
@@ -134,8 +145,8 @@ export default function UserForm() {
 
 					{/* <!--Terms and Conditions------> */}
 					<div className="boxContainer">
-						<input className='checkbox' type="checkbox" name="Terms" required />
-						<div className="boxTerms">I accept the terms and conditions</div>
+						<input className='checkboxTerms' type="checkbox" name="Terms" required />
+						<div className="box-Terms"><p>I accept the terms and conditions</p></div>
 					</div>&nbsp;
 					{/* <!--Terms and Conditions------> */}
 

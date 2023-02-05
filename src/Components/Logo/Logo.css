@@ -36,12 +36,14 @@ p {
  display:flex;
  flex-direction: column;
  justify-content: center;
- align-items: center;}
+ align-items: center;
+}
 
 
 .logoHomepage img {
  width: 100vw;
  height: 45vh;
+ max-width: fit-content;
 
 }
 .focus-in-contract{
