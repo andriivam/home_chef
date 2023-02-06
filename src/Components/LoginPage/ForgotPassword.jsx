@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from "react";
 import '../LoginPage/ForgotPasswordStyle.css';
 import { Link } from 'react-router-dom';
 import image from "./images/image.png";
@@ -15,9 +15,17 @@ export default function ForgotPassword() {
     // formState: { errors }
 } = useForm();
 
+const [password, setPassword] = useState('');
+const [confirmPassword, setConfirmPassword] = useState('');
+
 const onSubmit = async (data = {}) => {
     console.log(data, 'data')
     try {
+        if (password !== confirmPassword) {
+            alert('Passwords do not match!');
+            return;
+        }
+
         const resp = await fetch('http://localhost:3001/home/LoginPage/ForgotPassword', {
             method: "POST",
             headers: {
@@ -52,14 +60,14 @@ const onSubmit = async (data = {}) => {
               <label htmlFor="password" className="loginemail" > New Password </label>
             </div>
             <div className="logininput">
-              <input type="Password" required name="password" className="textBox" {...register("newPassword")} />
+              <input type="Password" required name="password" className="textBox" {...register("newPassword")} onChange={(e) => setPassword(e.target.value)} />
             </div>
           </div>
           <div className="loginlabel">
               <label htmlFor="password" className="loginemail" > Confirm New Password </label>
             </div>
             <div className="logininput">
-              <input type="Password" required name="password" className="textBox" />
+              <input type="Password" required name="confirmPassword" className="textBox" onChange={(e) => setConfirmPassword(e.target.value)} />
             </div>
           
           <input type="Submit" name="Submit" className="submitLoginButton" defaultValue="Login" />
