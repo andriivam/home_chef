@@ -21,7 +21,6 @@ function App() {
       
       <Router>
         <Routes>
-         
           <Route path="/" element={<Logo/>}/>
           <Route path="/home" element={<HomePage/>} />
           <Route path="/home/:id/ChefList" element={<ChefList />} />
