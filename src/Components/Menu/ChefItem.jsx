@@ -10,7 +10,7 @@ export default function ChefItem({ id }) {
   useEffect(() => {
     const getCuisine = async () => {
       try {
-        const response = await fetch(`http://localhost:3001/home/${id}/ChefList`)
+        const response = await fetch(`https://home-chef-app-team.herokuapp.com/home/${id}/ChefList`)
         const responseData = await response.json();
         setKitchenId(responseData);
 console.log(responseData, 'chefItm')

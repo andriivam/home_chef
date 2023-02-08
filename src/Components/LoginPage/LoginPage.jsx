@@ -18,7 +18,7 @@ let location = useNavigate();
   const onSubmit = async (data = {}) => {
     console.log(data, 'data')
     try {
-      const res = await fetch('http://localhost:3001/home/Loginpage', {
+      const res = await fetch('https://home-chef-app-team.herokuapp.com/home/Loginpage', {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
