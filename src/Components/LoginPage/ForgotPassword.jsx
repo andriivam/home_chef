@@ -26,7 +26,7 @@ const onSubmit = async (data = {}) => {
             return;
         }
 
-        const resp = await fetch('http://localhost:3001/home/LoginPage/ForgotPassword', {
+        const resp = await fetch('https://home-chef-app-team.herokuapp.com/home/LoginPage/ForgotPassword', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

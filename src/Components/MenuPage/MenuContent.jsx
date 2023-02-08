@@ -12,7 +12,7 @@ export default function MenuContent({ id }) {
     useEffect(() => {
         const getCuisine = async () => {
             try {
-                const response = await fetch(`http://localhost:3001/home/${id}/Menu`)
+                const response = await fetch(`https://home-chef-app-team.herokuapp.com/home/${id}/Menu`)
                 const responseData = await response.json();
                 setMenuTable(responseData);
 

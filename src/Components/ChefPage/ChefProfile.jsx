@@ -10,7 +10,7 @@ export default function ChefProfile({ id }) {
     useEffect(() => {
         const getCuisine = async () => {
             try {
-                const response = await fetch(`http://localhost:3001/${id}/chefProfileFull`)
+                const response = await fetch(`https://home-chef-app-team.herokuapp.com/${id}/chefProfileFull`)
                 const responseData = await response.json();
                 console.log(responseData, 'res data profile')
                 setChefProfile(responseData)
