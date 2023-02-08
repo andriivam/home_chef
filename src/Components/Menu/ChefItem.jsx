@@ -39,7 +39,7 @@ console.log(responseData, 'chefItm')
               </div>
               <div className="chefCard">
                 <p className="chefName"> <u> {info.name} </u></p>
-                <p className="cuisineDescription">{info.cuisineType}</p>
+                <p className="cuisineDescription">{info.aboutMe}</p>
               </div>
             </div>
           )
